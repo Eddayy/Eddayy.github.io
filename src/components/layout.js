@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import Header from './header'
 import './layout.css'
+import Navbar from '../components/navbar'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,6 +28,7 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
+        <Navbar />
           {children}
         </div>
       </>
