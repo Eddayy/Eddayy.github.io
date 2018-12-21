@@ -12,7 +12,7 @@ class Header extends React.Component {
     super(props)
 
     this.state = {
-      active: true,
+      active: false,
     }
     this.toggleClass = this.toggleClass.bind(this);
   }
@@ -30,7 +30,7 @@ class Header extends React.Component {
           <div class="navbar-brand">
             <div class="navbar-item">
               <Link to='/' >
-                <div class="title">
+                <div class="title is-3">
                 <span class="icon is-large has-text-primary"> 
                   <i class="fa fa-flask"></i>
                 </span>
@@ -38,11 +38,11 @@ class Header extends React.Component {
                 </div>
               </Link>
             </div>
-            <a role="button" onClick={this.toggleClass}  className={this.state.active?'navbar-burger is-active ':'navbar-burger'}>
-              <span></span>
-              <span></span>
-              <span></span>
-            </a>
+              <div role="button" onClick={this.toggleClass}  className={this.state.active?'navbar-burger is-active burger':'navbar-burger burger'}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
           </div>
             <div className={this.state.active?'is-active navbar-menu':'navbar-menu'}>
               <div class='navbar-start'>
@@ -78,7 +78,7 @@ class Header extends React.Component {
                 
               </div>
               <div class='navbar-end'>
-                <OutboundLink class="navbar-item " href={this.props.repo} >
+                <OutboundLink class="navbar-item " href={this.props.repo}>
                   <span class="icon is-large has-text-black-bis"> 
                     <i class="fa fa-github"></i>
                   </span>

@@ -9,7 +9,7 @@ const landing = ()=>{
       <div class="title">
         Hi! I'm Edmund
         <br/>
-        I create App/ications
+        I create App//ications
         <br/>
         Work in progress
       </div>
