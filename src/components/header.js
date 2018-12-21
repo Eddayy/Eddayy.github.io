@@ -24,15 +24,15 @@ class Header extends React.Component {
   
   render(){
     return(
-    <section class='hero'>
-      <nav class="navbar has-shadow">
-        <div class="container">
-          <div class="navbar-brand">
-            <div class="navbar-item">
+    <section className='hero'>
+      <nav className="navbar has-shadow">
+        <div className="container">
+          <div className="navbar-brand">
+            <div className="navbar-item">
               <Link to='/' >
-                <div class="title is-3">
-                <span class="icon is-large has-text-primary"> 
-                  <i class="fa fa-flask"></i>
+                <div className="title is-3">
+                <span className="icon is-large has-text-primary"> 
+                  <i className="fa fa-flask"></i>
                 </span>
                   {this.props.siteTitle}
                 </div>
@@ -45,42 +45,42 @@ class Header extends React.Component {
               </div>
           </div>
             <div className={this.state.active?'is-active navbar-menu':'navbar-menu'}>
-              <div class='navbar-start'>
-                <Link class="navbar-item" to='/blog'>
-                  <span class="icon is-medium has-text-info"> 
-                  <i class="fa fa-th-large"></i>
+              <div className='navbar-start'>
+                <Link className="navbar-item" to='/blog'>
+                  <span className="icon is-medium has-text-info"> 
+                  <i className="fa fa-th-large"></i>
                   </span>
                     Blog
                 </Link>
-                <Link class="navbar-item" to='/blog'>
-                  <span class="icon is-medium has-text-success"> 
-                    <i class="fa fa-user-circle"></i>
+                <Link className="navbar-item" to='/blog'>
+                  <span className="icon is-medium has-text-success"> 
+                    <i className="fa fa-user-circle"></i>
                   </span>
                     About me
                 </Link>
-                <div class="navbar-item has-dropdown is-hoverable">
-                  <a class="navbar-link" >
-                  <span class="icon is-medium has-text-danger"> 
-                      <i class="fa fa-briefcase"></i>
+                <div className="navbar-item has-dropdown is-hoverable">
+                  <div className="navbar-link" >
+                  <span className="icon is-medium has-text-danger"> 
+                      <i className="fa fa-briefcase"></i>
                   </span>
                     Side Projects
-                  </a>
-                  <div class="navbar-dropdown">
-                    <a class="navbar-item" href='/' >
+                  </div>
+                  <div className="navbar-dropdown">
+                    <Link className="navbar-item" to='/' >
                       Working in Progress
                       <br/>
                       One day..
-                    </a>
+                    </Link>
                     
           
                   </div>
                 </div>
                 
               </div>
-              <div class='navbar-end'>
-                <OutboundLink class="navbar-item " href={this.props.repo}>
-                  <span class="icon is-large has-text-black-bis"> 
-                    <i class="fa fa-github"></i>
+              <div className='navbar-end'>
+                <OutboundLink className="navbar-item " href={this.props.repo}>
+                  <span className="icon is-large has-text-black-bis"> 
+                    <i className="fa fa-github"></i>
                   </span>
                     Github repo
                 </OutboundLink>

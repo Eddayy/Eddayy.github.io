@@ -12,7 +12,7 @@ Linkedin : [Eddyble](https://www.linkedin.com/in/eddyble/)\
 Github : [Edmundtay96](https://gitlab.com/edmundtay96)\
 Gitlab : [Eddayy](https://github.com/Eddayy)\
 Kraggle: [Eddyble](https://www.kaggle.com/eddyble)\
-Website: [edday.github.io](https://eddayy.github.io/)\
+Website: [Eddayy.github.io](https://eddayy.github.io/)\
 Address: Puchong, Selangor, Malaysia
 
 Experience
@@ -44,7 +44,7 @@ Experience
 
 Final Year Project
 
-    My final year project, I create a tool that marks exam papers using machine learning with TensorFlow by using textual entailment technique. The data was feed using a bidirectional rnn. The answer given by students will be marked based on answers set by examiners or lecturers.
+My final year project, I create a tool that marks exam papers using machine learning with TensorFlow by using textual entailment technique. The data was feed using a bidirectional rnn. The answer given by students will be marked based on answers set by examiners or lecturers.
 
 **SPM (Sub science stream)**
 

@@ -41,6 +41,7 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     `gatsby-plugin-favicon`,
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -57,6 +58,13 @@ module.exports = {
         sampleRate: 5,
         siteSpeedSampleRate: 10,
         cookieDomain: "Eddayy.github.io",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/markdown/`,
+        name: "markdown-pages",
       },
     },
     
