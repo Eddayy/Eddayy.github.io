@@ -1,5 +1,5 @@
 ---
-path: "/about/resume"
+path: "/about"
 date: "2018-12-21"
 title: "Resume"
 ---
@@ -21,7 +21,7 @@ Experience
 
 + [Blocklime.com](https://www.blocklime.com/)
 + May 2018 – Current
-+ Front and Back-end web and mobile development and Blockchain infrastrucure development and deployment for Blocklime
++ Work on both the Front and Back-end for web and mobile development, also involve Etheruem Smart contract development and intergration. I was also involve in private Blockchain infrastrucure development and deployment using Quorum.  
 
 **Intern**
 

@@ -1,12 +1,10 @@
 import { Link } from 'gatsby'
-//import PropTypes from 'prop-types'
 import React from 'react'
 import 'font-awesome/css/font-awesome.min.css'
 
 import '../style/bulma.scss';
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-//import {findDOMNode} from 'react-dom'
-//= ({ siteTitle,repo }) 
+
 class Header extends React.Component {
   constructor(props) {
     super(props)
@@ -52,7 +50,7 @@ class Header extends React.Component {
                   </span>
                     Blog
                 </Link>
-                <Link className="navbar-item" to='/blog'>
+                <Link className="navbar-item" to='/about'>
                   <span className="icon is-medium has-text-success"> 
                     <i className="fa fa-user-circle"></i>
                   </span>
