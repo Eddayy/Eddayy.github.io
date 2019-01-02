@@ -18,7 +18,6 @@ const IndexPage = () => (
         </ul>
       </div>
     </section>
-    
     <Bloglist />
   </Layout>
 )

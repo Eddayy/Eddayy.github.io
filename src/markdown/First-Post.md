@@ -1,7 +1,7 @@
 ---
 path: "/blog/My-first-post"
 date: "2018-12-21"
-title: "I just started a websitet"
+title: "I just started a website"
 tags: ['First', 'Blog']
 excerpt: "The frontpage of me" 
 ---
