@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Landing from '../components/landing'
 import Bloglist from '../components/bloglist'
+import { Link } from 'gatsby'
 
 
 const IndexPage = () => (
@@ -13,8 +14,8 @@ const IndexPage = () => (
     <section className='container'>
       <div className="tabs">
         <ul>
-          <li className="is-active"><a>Blog</a></li>
-          <li title="coming soon"><a>Side Projects</a></li>
+          <li className="is-active"><Link>Blog</Link></li>
+          <li title="coming soon"><Link>Side Projects</Link></li>
         </ul>
       </div>
     </section>

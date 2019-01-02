@@ -61,10 +61,11 @@ class Bloglist extends React.Component {
                         </div>
                         <div>
                           {node.excerpt}
+                          <Link to={node.frontmatter.path}>
+                            Read more
+                          </Link>
                         </div>
-                        <Link className='buttons is-right' to={node.frontmatter.path}>
-                          Read more
-                        </Link>
+                        
                       </div>
                     )
                   })}
