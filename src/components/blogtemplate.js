@@ -16,10 +16,14 @@ const Template = ({data}) => {
     <SEO title="Home" keywords={['gatsby', 'application', 'react','bulma','github']} />
     <section className='hero'>
       <div className="container hero-body">
-      <div className="title">{title}</div>
-        <div className='blogpost' 
-          dangerouslySetInnerHTML={{__html:html}}
-        />
+        <div className='columns'>
+          <div className='is-three-fifths column'>
+          <div className="title">{title}</div>
+            <div className='blogpost' 
+              dangerouslySetInnerHTML={{__html:html}}
+            />
+          </div>
+        </div>
       </div>
     </section>
     </Layout>

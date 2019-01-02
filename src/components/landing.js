@@ -7,7 +7,7 @@ const landing = ()=>{
   return(
   <section className="hero">
     <div className="container hero-body">
-      <div className="title has-text-centered">
+      <div className="title">
         <Fade bottom>
           Hi! I'm Edmund
         </Fade> 

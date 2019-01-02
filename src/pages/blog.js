@@ -2,14 +2,15 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Landing from '../components/landing'
+import Bloglist from '../components/bloglist'
 
-
-const IndexPage = () => (
+const ResumePage = () => {
+  return(
   <Layout>
     <SEO title="Home" keywords={['gatsby', 'application', 'react','bulma','github']} />
-    <Landing />
+    <Bloglist/>
   </Layout>
-)
+  )
+}
 
-export default IndexPage
+export default ResumePage
