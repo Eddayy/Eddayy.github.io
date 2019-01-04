@@ -6,9 +6,9 @@ import { Link } from 'gatsby'
 import '../style/bulma.scss';
 
 class Bloglist extends React.Component {
-  constructor(props) {
-    super(props)
-  }
+  //constructor(props) {
+  //  super(props)
+  //}
   render(){
     return(
       <StaticQuery
@@ -18,7 +18,7 @@ class Bloglist extends React.Component {
           edges {
             node {
               frontmatter{
-                date
+                date(formatString: "DD/MM/YYYY")
                 title
                 path
               }
@@ -26,27 +26,33 @@ class Bloglist extends React.Component {
                 value
                 
               }
-              excerpt(pruneLength:200)
+              excerpt(pruneLength:300)
+              timeToRead
             }
           }
         }
       }
       `}
       render={({allMarkdownRemark}) => {
-        var {edges} = allMarkdownRemark
+        const {edges} = allMarkdownRemark
           return(
             <section className='hero'>
               <div className='columns '>
                 <div className='container hero-body'>
                   {edges.map(({node})=>{
+                    const {title} = node.frontmatter
+                    const {date} = node.frontmatter
+                    const {path} = node.frontmatter
+                    const {excerpt} = node
+                    const {timeToRead} = node
                     return(
                       <div className="is-three-fifths column has-shadow">
-                        <div className="title">
-                          {node.frontmatter.title}
-                        </div>
+                        <p className="title">{title}</p>
+                        <p className="subtitle is-5">Posted on {date} <span class="tag is-primary is-rounded">{timeToRead} min</span></p>
+                        
                         <div className="has-text-grey-dark">
-                          {node.excerpt}
-                          <Link to={node.frontmatter.path}>
+                          {excerpt}
+                          <Link to={path}>
                               Read more
                             </Link>
                           </div>
