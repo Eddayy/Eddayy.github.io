@@ -8,21 +8,6 @@ import '../style/bulma.scss';
 class Bloglist extends React.Component {
   constructor(props) {
     super(props)
-
-    this.state = {
-      query: `query{
-        allMarkdownRemark(filter:{frontmatter:{path:{glob:"/blog/*"}}}) {
-          edges {
-            node {
-              frontmatter{
-                title
-                path
-              }
-            }
-          }
-        }
-      }`,
-    }
   }
   render(){
     return(
@@ -59,12 +44,12 @@ class Bloglist extends React.Component {
                         <div className="title">
                           {node.frontmatter.title}
                         </div>
-                        <div>
+                        <div className="has-text-grey-dark">
                           {node.excerpt}
                           <Link to={node.frontmatter.path}>
-                            Read more
-                          </Link>
-                        </div>
+                              Read more
+                            </Link>
+                          </div>
                         
                       </div>
                     )
