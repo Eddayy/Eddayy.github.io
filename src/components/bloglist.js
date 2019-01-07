@@ -24,7 +24,6 @@ class Bloglist extends React.Component {
               }
               headings(depth:h1) {
                 value
-                
               }
               excerpt(pruneLength:300)
               timeToRead

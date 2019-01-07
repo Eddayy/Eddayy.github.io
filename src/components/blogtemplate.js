@@ -12,9 +12,10 @@ const Template = ({data}) => {
   const {html} = markdownRemark
   const {date} = markdownRemark.frontmatter
   const {path} = markdownRemark.frontmatter
+  const {excerpt} = markdownRemark
   return (
     <Layout>
-    <SEO title={Path.basename(path).replace(/-/g,' ')} keywords={['gatsby', 'application', 'react','bulma','github']} />
+    <SEO title={Path.basename(path).replace(/-/g,' ')} keywords={['gatsby', 'application', 'react','bulma','github']} description={excerpt} />
     <section className='hero'>
       <div className="container hero-body">
         <div className='columns is-centered'>
@@ -24,7 +25,35 @@ const Template = ({data}) => {
             <div className='blogpost' 
               dangerouslySetInnerHTML={{__html:html}}
             />
-          </div>
+            {date? 
+              
+              <form action="https://formspree.io/edmundtay96@gmail.com" method="POST">
+              <div className='title'>FeedBack</div>
+                <div className="field">
+                  <label className="label">Name</label>
+                  <div className="control is-expanded">
+                    <input className="input" type="text" name="name" placeholder="name"/>
+                  </div>
+                  </div>
+                <div className="field">
+                  <label className="label">Email</label>
+                  <div className="control is-expanded">
+                    <input className="input" type="email" name="_replyto" placeholder="email"/>
+                  </div>
+                </div>
+                <div className="field">
+                  <label className="label">Message</label>
+                  <div className="control is-expanded">
+                    <textarea className="textarea" name="message" placeholder="message"></textarea>
+                  </div>
+                </div>
+                <div className="field is-grouped">
+                  <div className="control ">
+                    <input className="button is-link is-right" type="submit" value="Send"/>
+                  </div>
+                </div>
+              </form> :''}
+            </div>
         </div>
       </div>
     </section>
@@ -41,6 +70,7 @@ export const query = graphql`
         title
         date(formatString: "DD MMMM YYYY")
       }
+      excerpt(pruneLength:200)
     }
   }
 `
