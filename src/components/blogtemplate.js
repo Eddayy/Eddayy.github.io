@@ -27,7 +27,7 @@ const Template = ({data}) => {
             />
             {date? 
               
-              <form action="https://formspree.io/edmundtay96@gmail.com" method="POST">
+              <form action="https://formspree.io/eddayyfeedback@gmail.com" method="POST">
               <div className='title'>FeedBack</div>
                 <div className="field">
                   <label className="label">Name</label>
