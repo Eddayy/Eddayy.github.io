@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import '../style/bulma.scss';
-
+import Path from 'path'
 
 const Template = ({data}) => {
   
@@ -11,15 +11,16 @@ const Template = ({data}) => {
   const {title} = markdownRemark.frontmatter
   const {html} = markdownRemark
   const {date} = markdownRemark.frontmatter
+  const {path} = markdownRemark.frontmatter
   return (
     <Layout>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react','bulma','github']} />
+    <SEO title={Path.basename(path).replace(/-/g,' ')} keywords={['gatsby', 'application', 'react','bulma','github']} />
     <section className='hero'>
       <div className="container hero-body">
         <div className='columns is-centered'>
           <div className='is-half column has-text-justified'>
             <p className="title">{title}</p>
-            <p className="subtitle is-6">Posted on {date}</p>
+            <p className="subtitle is-6">{date ? `Posted on ${date}`:''}</p>
             <div className='blogpost' 
               dangerouslySetInnerHTML={{__html:html}}
             />
@@ -36,6 +37,7 @@ export const query = graphql`
     markdownRemark(frontmatter: { path: {eq: $pathSlug} }) {
       html
       frontmatter {
+        path
         title
         date(formatString: "DD MMMM YYYY")
       }

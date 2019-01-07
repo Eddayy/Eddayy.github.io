@@ -1,7 +1,5 @@
 ---
 path: "/about"
-date: "2018-12-21"
-title: "Resume"
 ---
 
 # Edmund Tay Wei En
