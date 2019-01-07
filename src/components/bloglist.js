@@ -21,6 +21,7 @@ class Bloglist extends React.Component {
                 date(formatString: "DD MMMM YYYY")
                 title
                 path
+                tags
               }
               headings(depth:h1) {
                 value
@@ -44,11 +45,24 @@ class Bloglist extends React.Component {
                     const {path} = node.frontmatter
                     const {excerpt} = node
                     const {timeToRead} = node
+                    const {tags} = node.frontmatter
                     return(
                       <div className="is-three-fifths column has-shadow">
                         <p className="title">{title}</p>
-                        <p className="subtitle is-5">Posted on {date} <span class="tag is-primary is-rounded">{timeToRead} min</span></p>
-                        
+                        <p className="subtitle is-6">
+                          <span className="icon is-medium has-text-danger"> 
+                            <i className="fa fa-calendar"></i>
+                          </span>
+                          {date}
+                          <span className="icon is-medium has-text-primary"> 
+                            <i className="fa fa-book"></i>
+                          </span> 
+                          {timeToRead} min
+                          <span className="icon is-medium has-text-success"> 
+                            <i className="fa fa-tags"></i>
+                          </span> 
+                          {tags}
+                        </p>
                         <div className="has-text-grey-dark">
                           {excerpt}
                           <Link to={path}>
