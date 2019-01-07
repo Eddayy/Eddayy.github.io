@@ -27,7 +27,7 @@
     "react-reveal": "^1.2.2",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-github": "^0.16.18"
+    "typography-theme-fairy-gates": "^0.16.18"
   },
   "keywords": [
     "gatsby"

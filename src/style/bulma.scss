@@ -19,7 +19,9 @@
 @import "bulma/sass/grid/tiles.sass";
 
 
-
-a:hover{
-  text-decoration: none !important;
+//todo remove a underline
+a
+{
+  background-image: none;
 }
+  

@@ -17,7 +17,7 @@ const Template = ({data}) => {
     <section className='hero'>
       <div className="container hero-body">
         <div className='columns is-centered'>
-          <div className='is-three-fifths column has-text-justified'>
+          <div className='is-half column has-text-justified'>
             <p className="title">{title}</p>
             <p className="subtitle is-6">Posted on {date}</p>
             <div className='blogpost' 
@@ -37,7 +37,7 @@ export const query = graphql`
       html
       frontmatter {
         title
-        date(formatString: "DD/MM/YYYY")
+        date(formatString: "DD MMMM YYYY")
       }
     }
   }

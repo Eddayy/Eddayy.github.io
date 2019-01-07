@@ -18,7 +18,7 @@ class Bloglist extends React.Component {
           edges {
             node {
               frontmatter{
-                date(formatString: "DD/MM/YYYY")
+                date(formatString: "DD MMMM YYYY")
                 title
                 path
               }

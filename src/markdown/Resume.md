@@ -3,8 +3,11 @@ path: "/about"
 date: "2018-12-21"
 title: "Resume"
 ---
+
 # Edmund Tay Wei En
-*Full Stack web and mobile developer, ameteur ML data scientist*
+
+*Full Stack web and mobile developer, ameteur ML data scientist*\
+*Current interest: Serverless and cloud container technology with ML(image recognistion and scaling for web) as a hobby*
 
 Mobile: +60-179882188\
 Email : edmundtay96@gmail<i></i>.com\
@@ -15,8 +18,9 @@ Kraggle: [Eddyble](https://www.kaggle.com/eddyble)\
 Website: [Eddayy.github.io](https://eddayy.github.io/)\
 Address: Puchong, Selangor, Malaysia
 
-Experience
+**Experience**
 ----------
+
 **Blockchain developer**
 
 + [Blocklime.com](https://www.blocklime.com/)
@@ -64,8 +68,10 @@ Web development tech stacks\
 + Webpack/Gulp
 + Nodejs
 + Django
++ Linux Bash Scripting
 + Expressjs
 + NGINX
++ Docker
 + SQL and NoSQL databases
 + API design
 

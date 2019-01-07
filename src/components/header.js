@@ -27,7 +27,7 @@ class Header extends React.Component {
         <div className="container">
           <div className="navbar-brand">
             <div className="navbar-item">
-              <Link to='/' >
+              <Link className="" to='/' >
                 <div className="title is-3">
                 <span className="icon is-large has-text-primary"> 
                   <i className="fa fa-flask"></i>
@@ -44,13 +44,13 @@ class Header extends React.Component {
           </div>
             <div className={this.state.active?'is-active navbar-menu':'navbar-menu'}>
               <div className='navbar-start'>
-                <Link className="navbar-item" to='/blog'>
+                <Link className="navbar-item " to='/blog'>
                   <span className="icon is-medium has-text-info"> 
                   <i className="fa fa-th-large"></i>
                   </span>
                     Blog
                 </Link>
-                <Link className="navbar-item" to='/about'>
+                <Link className="navbar-item " to='/about'>
                   <span className="icon is-medium has-text-success"> 
                     <i className="fa fa-user-circle"></i>
                   </span>
@@ -64,7 +64,7 @@ class Header extends React.Component {
                     Side Projects
                   </div>
                   <div className="navbar-dropdown">
-                    <Link className="navbar-item" to='/' >
+                    <Link className="navbar-item " to='/' >
                       Working in Progress
                       <br/>
                       One day..

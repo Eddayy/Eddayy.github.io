@@ -1,5 +1,5 @@
 import Typography from "typography"
-import GithubTheme from "typography-theme-github"
+import GithubTheme from "typography-theme-fairy-gates"
 
 const typography = new Typography(GithubTheme)
 
