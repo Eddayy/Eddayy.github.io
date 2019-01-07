@@ -23,3 +23,13 @@
     
     Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
     
+
+Upcoming features
+
+- [ ] add footer with relevant info
+
+- [ ] improve comment system
+
+- [ ] create search functionality
+
+- [ ] create recommendation system
