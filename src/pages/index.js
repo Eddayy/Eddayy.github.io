@@ -14,8 +14,8 @@ const IndexPage = () => (
     <section className='container'>
       <div className="tabs">
         <ul>
-          <li className="is-active"><Link>Blog</Link></li>
-          <li title="coming soon"><Link>Side Projects</Link></li>
+          <li className="is-active"><Link to='/blog'>Blog</Link></li>
+          <li title="coming soon"><Link to='/'>Side Projects</Link></li>
         </ul>
       </div>
     </section>
