@@ -29,3 +29,15 @@ a
 .hero-body{
   padding: 1rem 1.5rem;
 }
+
+article {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+main{
+  flex:1 1 auto
+}
+

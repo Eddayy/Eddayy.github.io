@@ -22,7 +22,7 @@ class Header extends React.Component {
   
   render(){
     return(
-    <section className='hero'>
+    <header className='hero'>
       <nav className="navbar has-shadow">
         <div className="container">
           <div className="navbar-brand">
@@ -87,7 +87,7 @@ class Header extends React.Component {
             
           </div>
       </nav>
-    </section>
+    </header>
     )
   }
 }
