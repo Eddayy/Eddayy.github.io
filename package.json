@@ -25,6 +25,7 @@
     "react-dom": "^16.6.3",
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
+    "react-share": "^2.4.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
     "typography-theme-fairy-gates": "^0.16.18"

@@ -4,6 +4,17 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import '../style/bulma.scss';
 import Path from 'path'
+import {
+  TwitterShareButton,
+  FacebookShareButton,
+  RedditShareButton,
+  LinkedinShareButton,
+
+  TwitterIcon,
+  FacebookIcon,
+  RedditIcon,
+  LinkedinIcon
+} from 'react-share';
 
 const Template = ({data}) => {
   
@@ -25,8 +36,7 @@ const Template = ({data}) => {
             <div className='blogpost' 
               dangerouslySetInnerHTML={{__html:html}}
             />
-            {date? 
-              
+            {date?               
               <form action="https://formspree.io/eddayyfeedback@gmail.com" method="POST">
               <div className='title'>FeedBack</div>
                 <div className="field">
@@ -53,8 +63,27 @@ const Template = ({data}) => {
                   </div>
                 </div>
               </form> :''}
-            </div>
+              
+          </div>
         </div>
+      </div>
+    </section>
+    <section className='hero'>
+      <div className='container hero-body'>
+        <div className='title columns is-centered'>
+          <div className='column has-text-centered'>
+            Social
+          </div>        
+        </div>
+        <div className='columns is-centered'>
+        <div className='navbar-brand'>
+          <TwitterShareButton className='navbar-item' url={`https://eddayy.github.io${path}`} children={<TwitterIcon size={32} round={true} />}/>
+          <RedditShareButton className='navbar-item' url={`https://eddayy.github.io${path}`} children={<RedditIcon  size={32} round={true} />}/>
+          <FacebookShareButton className='navbar-item' url={`https://eddayy.github.io${path}`} children={<FacebookIcon size={32} round={true} />}/>
+          <LinkedinShareButton className='navbar-item' url={`https://eddayy.github.io${path}`} children={<LinkedinIcon size={32} round={true} />}/>
+        </div>
+        </div>
+        
       </div>
     </section>
     </Layout>
