@@ -33,3 +33,5 @@ Upcoming features
 - [ ] create search functionality
 
 - [ ] create recommendation system
+
+- [ ] add image system

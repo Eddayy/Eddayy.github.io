@@ -24,13 +24,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: 'gatsby-starter-default',
-        short_name: 'starter',
+        name: `Edmund's Blog`,
+        short_name: 'Blog',
         start_url: '/',
         background_color: '#ffffff',
         theme_color: '#ffffff',
         display: 'minimal-ui',
-        icon: 'src/favicon.png', // This path is relative to the root of the site.
+        icon: 'src/static/favicon.png', // This path is relative to the root of the site.
       },
     },
     {
@@ -40,8 +40,23 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    `gatsby-plugin-favicon`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              linkImagesToOriginal:true,
+              maxWidth: 600,
+            },
+          },
+        ],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
