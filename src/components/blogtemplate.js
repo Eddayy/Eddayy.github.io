@@ -56,7 +56,6 @@ const Template = ({ data }) => {
               ) : (
                 <div />
               )}
-
               <div
                 className="blogpost"
                 dangerouslySetInnerHTML={{ __html: html }}
