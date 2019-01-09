@@ -1,8 +1,7 @@
 ---
 path: "/about"
+title: 'Edmund Tay Wei En'
 ---
-
-# Edmund Tay Wei En
 
 *Full Stack web and mobile developer, amateur ML data scientist, generalist programmer*\
 *Current interest: Serverless and cloud container technology with ML(image recognition and scaling for web) as a hobby*

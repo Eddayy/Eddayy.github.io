@@ -34,6 +34,7 @@ const Template = ({data}) => {
         <div className='columns is-centered'>
           <div className='is-half column has-text-justified'>
           <p className="title">{title}</p>
+          {date?  
           <p className="subtitle is-6">
             <span className="icon is-medium has-text-danger"> 
               <i className="fa fa-calendar"></i>
@@ -50,6 +51,8 @@ const Template = ({data}) => {
               return <span className='blogtag is-light tag'>{tag}</span>
             })}
           </p>
+            :<div/>
+          }
             
             <div className='blogpost' 
               dangerouslySetInnerHTML={{__html:html}}
