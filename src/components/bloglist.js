@@ -52,26 +52,30 @@ class Bloglist extends React.Component {
                     return (
                       <div className="is-three-fifths column has-shadow">
                         <p className="title">{title}</p>
-                        <p className="subtitle is-6">
-                          <span className="icon is-medium has-text-danger">
-                            <i className="fa fa-calendar" />
-                          </span>
-                          {date}
-                          <span className="icon is-medium has-text-primary">
-                            <i className="fa fa-book" />
-                          </span>
-                          {timeToRead} min
-                          <span className="icon is-medium has-text-success">
-                            <i className="fa fa-tags" />
-                          </span>
-                          {tags.map(tag => {
-                            return (
-                              <span className="blogtag is-light tag">
-                                {tag}
-                              </span>
-                            )
-                          })}
-                        </p>
+                        <div className="subtitle is-6 columns is-multiline">
+                          <div>
+                            <span className="icon is-medium has-text-danger">
+                              <i className="fa fa-calendar" />
+                            </span>
+                            {date}
+                            <span className="icon is-medium has-text-primary">
+                              <i className="fa fa-book" />
+                            </span>
+                            {timeToRead} min
+                          </div>
+                          <div className=''>
+                            <span className="icon is-medium has-text-success">
+                              <i className="fa fa-tags" />
+                            </span>
+                            {tags.map(tag => {
+                              return (
+                                <span className="blogtag is-light tag">
+                                  {tag}
+                                </span>
+                              )
+                            })}
+                          </div>
+                        </div>
                         <div className="has-text-grey-dark">
                           {excerpt}
                           <Link to={path}>Read more</Link>

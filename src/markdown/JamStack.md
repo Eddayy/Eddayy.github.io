@@ -1,11 +1,11 @@
 ---
 path: "/blog/jamstack"
 date: "2019-01-09"
-title: "JamStack: The Jam between serverless and client"
+title: "JamStack: less is better"
 tags: ['Technology', 'JamStack','Serverless','WIP']
 ---
 ![](../images/jamstack.png)
-Javascript, API and Markup. That is what the Jam in the stack stand for. Javascript for dynamic content, APIs that abstract database and Markup for the static content for the website. During the development of this website, I come across this term when looking for cheap and fast design pattern to follow. The Jamstack basically says that there should be no databases, no webserver. You just have to put up the project in git, build it once and let a cdn like github pages or netlify point towards it.
+Javascript, API and Markup. That is what the Jam in the stack stand for. Javascript for dynamic content, APIs that abstract database and Markup for the static content for the website. During the development of this website, I come across this term when looking for cheap and fast design pattern to follow. The Jamstack basically says that there should be no databases, no webserver. You just have to put up the project in git, build it once and let a CDN like github pages or netlify point towards it.
 
 Previously, web developers uses components and templating engines to improve code reusability and provide dynamic content. The user will go to a link and the server will create the page with dynamic content and serve it to the user. The rendering process used to take a considerable amount of resource as it needs to do thousand of templates. There are ways around it like caching pages, but for small website that was less than a hundred page or when changes to content happen infrequently. 
 

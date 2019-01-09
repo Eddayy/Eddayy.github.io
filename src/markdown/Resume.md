@@ -104,4 +104,4 @@ Malay: Casually Proficient
 **Interest**
 ---------
 I enjoy traveling, reading books, watching movies, going to gym and playing video games on my free time. I have an interest in history and enjoy reading or watching the alternate history genre. Also listen to several podscast like cgpgrey, freakonomics, any gimlet series and 99% invisible. Psycho-physiological economics is a subject that I’m also interested in. Knowing the way people react to decisions and ways to influence behaviors can help shape
-designing economic systems in blockchain. People can change and as a person I am always evolving so my interest and hobbies may change as the writing of this. (written in May 2018) 
+designing economic systems in blockchain. People can change and as a person I am always evolving so my interest and hobbies may change as of the writing of this. (written in May 2018) 

@@ -34,30 +34,35 @@ const Template = ({ data }) => {
       <section className="hero">
         <div className="container hero-body">
           <div className="columns is-centered">
-            <div className="is-half column has-text-justified">
+            <div className="is-half column">
               <p className="title">{title}</p>
               {date ? (
-                <p className="subtitle is-6">
-                  <span className="icon is-medium has-text-danger">
-                    <i className="fa fa-calendar" />
-                  </span>
-                  {date}
-                  <span className="icon is-medium has-text-primary">
-                    <i className="fa fa-book" />
-                  </span>
-                  {timeToRead} min
-                  <span className="icon is-medium has-text-success">
-                    <i className="fa fa-tags" />
-                  </span>
-                  {tags.map(tag => {
-                    return <span className="blogtag is-light tag">{tag}</span>
-                  })}
-                </p>
+                <div className="subtitle columns is-6 is-multiline">
+                  <div>
+                    <span className="icon is-medium has-text-danger">
+                      <i className="fa fa-calendar" />
+                    </span>
+                    {date}
+                    <span className="icon is-medium has-text-primary">
+                      <i className="fa fa-book" />
+                    </span>
+                    {timeToRead} min
+                  </div>
+                  <div>
+                    <span className="icon is-medium has-text-success">
+                      <i className="fa fa-tags" />
+                    </span>
+                    {tags.map(tag => {
+                      return <span className="blogtag is-light tag">{tag}</span>
+                    })}
+                  </div>
+                  
+                </div>
               ) : (
                 <div />
               )}
               <div
-                className="blogpost"
+                className="blogpost has-text-justified"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
               {date ? (
