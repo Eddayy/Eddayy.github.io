@@ -13,8 +13,10 @@ const IndexPage = () => (
       keywords={['gatsby', 'application', 'react', 'bulma', 'github']}
     />
     <Landing />
-    <section className="container">
-      <div className="tabs">
+    <section className="hero">
+      <div className="columns">
+        <div className="container hero-body">
+        <div className="tabs">
         <ul>
           <li className="is-active">
             <Link to="/blog">Blog</Link>
@@ -23,6 +25,8 @@ const IndexPage = () => (
             <Link to="/">Side Projects</Link>
           </li>
         </ul>
+      </div>
+        </div>
       </div>
     </section>
     <Bloglist />

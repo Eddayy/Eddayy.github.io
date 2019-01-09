@@ -48,5 +48,11 @@ html, body {
 }
 
 .tabs ul{
-  border-bottom-style:none
+  border-bottom-style:none;
+  margin-bottom: 0;
+  margin-left: 0.75rem;
+}
+
+.subtitle.columns{
+  margin-left: -0.5rem
 }

@@ -6,8 +6,8 @@ import Fade from 'react-reveal/Fade'
 const landing = () => {
   return (
     <section className="hero">
-      <div className="container hero-body">
-        <div className="columns">
+      <div className="columns">
+        <div className="container hero-body">
           <div className="is-two-fifths column ">
             <p className="title">
               <Fade bottom>Hi! I'm Edmund</Fade>
