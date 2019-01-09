@@ -1,7 +1,9 @@
 import Typography from 'typography'
-import GithubTheme from 'typography-theme-fairy-gates'
+import FairyGates from './customtheme'
 
-const typography = new Typography(GithubTheme)
+
+
+const typography = new Typography(FairyGates)
 
 if (process.env.NODE_ENV !== 'production') {
   typography.injectStyles()

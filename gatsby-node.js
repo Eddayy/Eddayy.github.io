@@ -20,6 +20,9 @@ exports.createPages = (({graphql, actions}) => {
         }
         `
       ).then(result=>{
+        if (result.errors) {
+          return Promise.reject(result.errors)
+        }
         result.data.allMarkdownRemark.edges.forEach(({node}) => {
           const path =  node.frontmatter.path
           createPage({
