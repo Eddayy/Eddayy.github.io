@@ -24,6 +24,8 @@ const Template = ({data}) => {
   const {date} = markdownRemark.frontmatter
   const {path} = markdownRemark.frontmatter
   const {excerpt} = markdownRemark
+  const {timeToRead} = markdownRemark
+  const {tags} = markdownRemark.frontmatter
   return (
     <Layout>
     <SEO title={Path.basename(path).replace(/-/g,' ')} keywords={['gatsby', 'application', 'react','bulma','github']} description={excerpt} />
@@ -31,8 +33,24 @@ const Template = ({data}) => {
       <div className="container hero-body">
         <div className='columns is-centered'>
           <div className='is-half column has-text-justified'>
-            <p className="title">{title}</p>
-            <p className="subtitle is-6">{date ? `Posted on ${date}`:''}</p>
+          <p className="title">{title}</p>
+          <p className="subtitle is-6">
+            <span className="icon is-medium has-text-danger"> 
+              <i className="fa fa-calendar"></i>
+            </span>
+            {date}
+            <span className="icon is-medium has-text-primary"> 
+              <i className="fa fa-book"></i>
+            </span> 
+            {timeToRead} min
+            <span className="icon is-medium has-text-success"> 
+              <i className="fa fa-tags"></i>
+            </span> 
+            {tags.map((tag)=> {
+              return <span className='blogtag is-light tag'>{tag}</span>
+            })}
+          </p>
+            
             <div className='blogpost' 
               dangerouslySetInnerHTML={{__html:html}}
             />
@@ -98,8 +116,10 @@ export const query = graphql`
         path
         title
         date(formatString: "DD MMMM YYYY")
+        tags
       }
-      excerpt(pruneLength:200)
+      excerpt(pruneLength:150)
+      timeToRead
     }
   }
 `

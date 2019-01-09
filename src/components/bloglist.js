@@ -61,7 +61,9 @@ class Bloglist extends React.Component {
                           <span className="icon is-medium has-text-success"> 
                             <i className="fa fa-tags"></i>
                           </span> 
-                          {tags}
+                            {tags.map((tag)=> {
+                              return <span className='blogtag is-light tag'>{tag}</span>
+                            })}
                         </p>
                         <div className="has-text-grey-dark">
                           {excerpt}
