@@ -4,8 +4,8 @@ path: "/about"
 
 # Edmund Tay Wei En
 
-*Full Stack web and mobile developer, ameteur ML data scientist*\
-*Current interest: Serverless and cloud container technology with ML(image recognistion and scaling for web) as a hobby*
+*Full Stack web and mobile developer, amateur ML data scientist, generalist programmer*\
+*Current interest: Serverless and cloud container technology with ML(image recognition and scaling for web) as a hobby*
 
 Mobile: +60-179882188\
 Email : edmundtay96@gmail<i></i>.com\
@@ -23,7 +23,7 @@ Address: Puchong, Selangor, Malaysia
 
 + [Blocklime.com](https://www.blocklime.com/)
 + May 2018 – Current
-+ Work on both the Front and Back-end for web and mobile development, also involve Etheruem Smart contract development and intergration. I was also involve in private Blockchain infrastrucure development and deployment using Quorum.  
++ Work on both the Front and Back-end for web and mobile development, also involve Etheruem Smart contract development and integration. I was also involve in private Blockchain infrastructure development and deployment using Quorum.  
 
 **Intern**
 
@@ -56,7 +56,7 @@ My final year project, I create a tool that marks exam papers using machine lear
 **Technical Skills**
 ---------
 Web development tech stacks\
-*Experience working with blockchain applications*
+*Experience working with blockchain DApp or decentralize applications, worked with back end web frameworks, transpilers and modern front end js frameworks*
 
 + React
 + Redux
@@ -74,18 +74,19 @@ Web development tech stacks\
 + API design
 
 Mobile tech stacks\
-*More experience with android development*
+*More experience with android development and hybrid development*
 
 + React native
 + Phonegap
 
 Data science tech stacks\
-*Used python to process data and pipe to ML model*
+*Used python to process data and pipe to ML model, currently focuses on scaling ML models to client side processing*
 
 + Python
 + Numpy array processing
 + Image processing
 + Pytorch
++ Tensorflowjs
 
 **Past Activities**
 ---------
@@ -103,5 +104,5 @@ Malay: Casually Proficient
 
 **Interest**
 ---------
-I enjoy travelling, reading books, watching movies, going to gym and playing video games on my free time. I have an interest in history and enjoy reading or watching the alternate history genre. Also listen to several podscast like cgpgrey, freakonomics, any gimlet series and 99% invisible. Psycho-physiological economics is a subject that I’m also interested in. Knowing the way people react to decisions and ways to incentivise or decentivise behaviors can help shape
-designing economic systems in blockchain.
+I enjoy traveling, reading books, watching movies, going to gym and playing video games on my free time. I have an interest in history and enjoy reading or watching the alternate history genre. Also listen to several podscast like cgpgrey, freakonomics, any gimlet series and 99% invisible. Psycho-physiological economics is a subject that I’m also interested in. Knowing the way people react to decisions and ways to influence behaviors can help shape
+designing economic systems in blockchain. People can change and as a person I am always evolving so my interest and hobbies may change as the writing of this. (written in May 2018) 

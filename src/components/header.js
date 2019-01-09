@@ -68,12 +68,9 @@ class Header extends React.Component {
                       Working in Progress
                       <br/>
                       One day..
-                    </Link>
-                    
-          
+                    </Link> 
                   </div>
                 </div>
-                
               </div>
               <div className='navbar-end'>
                 <OutboundLink className="navbar-item " href={this.props.repo}>

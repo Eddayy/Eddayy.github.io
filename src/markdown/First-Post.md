@@ -2,8 +2,7 @@
 path: "/blog/My-first-post"
 date: "2019-01-02"
 title: "I just started this website"
-tags: ['First', 'Blog']
-excerpt: "The front page of me" 
+tags: ['Announcement','Features']
 ---
 
 Hey! Welcome to the front page of me.
