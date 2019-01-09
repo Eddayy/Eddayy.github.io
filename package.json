@@ -44,8 +44,10 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "devDependencies": {
+    "cypress": "^3.1.4",
     "gh-pages": "^2.0.1",
-    "prettier": "^1.15.2"
+    "prettier": "^1.15.2",
+    "start-server-and-test": "^1.7.11"
   },
   "repository": {
     "type": "git",
