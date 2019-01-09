@@ -13,7 +13,9 @@ So I decided to start a blog. I'm gonna commit to release a post once a month, m
 
 Currently due to architecture of the website, there is no more back-end for the website. But I wanna hear feedback on my post and such. So as a temporary solution. I setup Formspree, so email contact form solution. By submitting the form below, I will get an email about your post. It is not a good solution if likes say I got hundred of comment(a man can dream) and there is no native way to do sorting. There's also the tedious task of approving every post's feedback form. A possible solution is I setup a serverless function API to handle submitting comments and to load the comments from S3 maybe. But since I'm a cheapskate, I want FREE solution. There's also disqus, but from what I heard, their free tier is very slow. For now, this is a problem for another day.
 
-There's already a few post ideas I had in mind already. Gonna write about the tech stacks I used for building this website and about my other interest like machine learning and my journey with Udacity's Pytorch challenge. Lastly,  I hope you enjoyed reading about a guy babbling about his quarter life crisis, Happy New year to the readers.
+There's already a few post ideas I had in mind already. Gonna write about the tech stacks I used for building this website and about my other interest like machine learning and my journey with Udacity's Pytorch challenge. Lastly,  I hope you enjoyed reading about a guy babbling about his quarter life crisis, Happy New years, cheers.
+
+![](../images/kl-fireworks.jpeg)
 
 
 [1]:https://medium.com/data-lab/the-optimal-post-is-7-minutes-74b9f41509b

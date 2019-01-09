@@ -53,6 +53,7 @@ module.exports = {
               quality:80,
               withWebp:true,
               maxWidth: 600,
+              wrapperStyle:'width: 100%'
             },
           },
         ],
