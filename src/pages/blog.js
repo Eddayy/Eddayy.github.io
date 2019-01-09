@@ -5,11 +5,14 @@ import SEO from '../components/seo'
 import Bloglist from '../components/bloglist'
 
 const ResumePage = () => {
-  return(
-  <Layout>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react','bulma','github']} />
-    <Bloglist/>
-  </Layout>
+  return (
+    <Layout>
+      <SEO
+        title="Home"
+        keywords={['gatsby', 'application', 'react', 'bulma', 'github']}
+      />
+      <Bloglist />
+    </Layout>
   )
 }
 

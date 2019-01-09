@@ -6,16 +6,22 @@ import Landing from '../components/landing'
 import Bloglist from '../components/bloglist'
 import { Link } from 'gatsby'
 
-
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react','bulma','github']} />
+    <SEO
+      title="Home"
+      keywords={['gatsby', 'application', 'react', 'bulma', 'github']}
+    />
     <Landing />
-    <section className='container'>
+    <section className="container">
       <div className="tabs">
         <ul>
-          <li className="is-active"><Link to='/blog'>Blog</Link></li>
-          <li title="coming soon"><Link to='/'>Side Projects</Link></li>
+          <li className="is-active">
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li title="coming soon">
+            <Link to="/">Side Projects</Link>
+          </li>
         </ul>
       </div>
     </section>
