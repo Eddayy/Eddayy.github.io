@@ -1,5 +1,5 @@
 ---
-path: "/blog/jamstack"
+path: "/blog/JamStack"
 date: "2019-01-09"
 title: "JamStack: less is better"
 tags: ['Technology', 'JamStack','Serverless','WIP']
