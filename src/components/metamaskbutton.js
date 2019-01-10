@@ -33,17 +33,12 @@ class metamaskbutton extends React.Component{
     window.web3.eth.sendTransaction({
       to: '0xEddae736256B1F3cf1a9F278CfdcB1E45f4c5515',
       from: account,
-      value: window.web3.toWei('0.005', 'ether'),
+      value: window.web3.toWei('0.01', 'ether'),
     }, function (err, transactionHash) {
       if (err) return this.onOpenModal('Oh no!: ' + err.message)
-      // If you get a transactionHash, you can assume it was sent,
-      // or if you want to guarantee it was received, you can poll
-      // for that transaction to be mined first.
       this.onOpenModal(`Transaction successful! Thank you so much. You can track your transaction here: ${transactionHash}`)
     })
   }
-
-
 
   render(){
     return(
