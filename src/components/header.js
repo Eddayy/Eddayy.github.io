@@ -38,6 +38,7 @@ class Header extends React.Component {
               </div>
               <div
                 role="button"
+                aria-hidden="true"
                 onClick={this.toggleClass}
                 className={
                   this.state.active

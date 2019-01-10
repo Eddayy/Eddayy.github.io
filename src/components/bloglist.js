@@ -78,7 +78,7 @@ class Bloglist extends React.Component {
                         </div>
                         <div className="has-text-grey-dark">
                           {excerpt}
-                          <Link to={path}>Read more</Link>
+                          <Link className="has-text-link" to={path}>Read more</Link>
                         </div>
                       </div>
                     )

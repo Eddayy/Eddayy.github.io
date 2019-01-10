@@ -4,7 +4,7 @@ import MetamaskButton from './metamaskbutton'
 const footer = () => {
   return (
     <footer className="footer has-background-white-ter">
-      <div className="container has-text-grey hero-body">
+      <div className="container has-text-grey-dark hero-body">
         <div className="columns">
           <div className="column">
             Feedback

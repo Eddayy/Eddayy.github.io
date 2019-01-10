@@ -43,7 +43,7 @@ class metamaskbutton extends React.Component{
   render(){
     return(
       <div>
-        <button className='tip-button' onClick={this.startmetamask}>
+        <button className='tip-button' aria-hidden="true" onClick={this.startmetamask}>
         <Image
           imgsrc={this.state.img}
           style={{

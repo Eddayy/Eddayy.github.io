@@ -1,5 +1,6 @@
 import React from 'react'
 import 'font-awesome/css/font-awesome.min.css'
+
 import '../style/bulma.scss'
 import Fade from 'react-reveal/Fade'
 

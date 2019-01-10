@@ -89,7 +89,7 @@ Data science tech stacks\
 
 **Past Activities**
 ---------
-`Nov 2018` Scholarship at udacity's pytorch challenge\
+`Nov 2018` Udacity's pytorch challenge Scholarship program\
 `Oct 2018` Trainer at building a dapp in APU blockchain workshop \
 `Jun 2018` Participated in local neighboarhood cleanup\
 `Feb 2018` Participated in blocklime workshop\

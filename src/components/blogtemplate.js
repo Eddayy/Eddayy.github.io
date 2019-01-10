@@ -129,21 +129,25 @@ const Template = ({ data }) => {
             <div className="navbar-brand">
               <TwitterShareButton
                 className="navbar-item"
+                aria-hidden="true"
                 url={`https://eddayy.github.io${path}`}
                 children={<TwitterIcon size={32} round={true} />}
               />
               <RedditShareButton
                 className="navbar-item"
+                aria-hidden="true"
                 url={`https://eddayy.github.io${path}`}
                 children={<RedditIcon size={32} round={true} />}
               />
               <FacebookShareButton
                 className="navbar-item"
+                aria-hidden="true"
                 url={`https://eddayy.github.io${path}`}
                 children={<FacebookIcon size={32} round={true} />}
               />
               <LinkedinShareButton
                 className="navbar-item"
+                aria-hidden="true"
                 url={`https://eddayy.github.io${path}`}
                 children={<LinkedinIcon size={32} round={true} />}
               />
