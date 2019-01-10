@@ -26,12 +26,8 @@
 
 Upcoming features
 
-- [ ] add footer with relevant info
-
 - [ ] improve comment system
 
 - [ ] create search functionality
 
 - [ ] create recommendation system
-
-- [ ] add image system
