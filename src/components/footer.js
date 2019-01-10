@@ -22,7 +22,7 @@ const footer = () => {
             Donations
             <br />
             <MetamaskButton />
-            <br />
+            
             Bitcoin:
             <br />
             1Bqwtx1tDmrxsrZpyqiU8sMiT2jYiwYgoj

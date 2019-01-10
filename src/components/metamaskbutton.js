@@ -1,13 +1,14 @@
 import React from 'react'
 import Modal from "react-responsive-modal";
-
+import Image from './image'
 class metamaskbutton extends React.Component{
   constructor(props) {
     super(props)
 
     this.state = {
       open: false,
-      err:''
+      err:'',
+      img:'2_pay_mm_off.png'
     };
     this.onOpenModal = this.onOpenModal.bind(this)
     this.startmetamask = this.startmetamask.bind(this)
@@ -48,6 +49,16 @@ class metamaskbutton extends React.Component{
     return(
       <div>
         <button className='tip-button' onClick={this.startmetamask}>
+        <Image
+          imgsrc={this.state.img}
+          style={{
+            position: "absolute",
+            left: 0,
+            top: 0,
+            width: "100%",
+            height: "100%"
+          }}
+        />
         </button>
         <Modal open={this.state.open} onClose={this.onCloseModal} center>
           <br/>
