@@ -29,7 +29,7 @@
 
 article {
   min-height: 100vh;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
 
 }
@@ -55,4 +55,22 @@ html, body {
 
 .subtitle.columns{
   margin-left: -0.5rem
+}
+
+.tip-button {
+  width: 8rem;
+  height: 2.4210526316rem;
+  background-image: url('../images/2_pay_mm_off.png');
+  background-size: 100%;
+  padding:0;
+  border-width:0;
+  cursor: pointer;
+}
+
+.tip-button:hover {
+  background-image: url('../images/2_pay_mm_over.png');
+}
+
+.tip-button:active {
+  background-image: url('../images/2_pay_mm_off.png');
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import MetamaskButton from './metamaskbutton'
 
 const footer = () => {
   return (
@@ -20,7 +21,11 @@ const footer = () => {
           <div className="column">
             Donations
             <br />
+            <MetamaskButton />
+            <br />
             Bitcoin:
+            <br />
+            1Bqwtx1tDmrxsrZpyqiU8sMiT2jYiwYgoj
             <br />
             Etheruem:
             <br />
