@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: eddayy.github.io
+Token: 45ab6efb78e573a54e454a3f471fea7ed91d28de2fcda20e417d2e876f55c788 
