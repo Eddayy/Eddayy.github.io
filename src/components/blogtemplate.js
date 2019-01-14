@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Comments from '../containers/comments'
 import '../style/bulma.scss'
 import Path from 'path'
 import {
@@ -14,6 +15,9 @@ import {
   RedditIcon,
   LinkedinIcon,
 } from 'react-share'
+
+
+
 
 const Template = ({ data }) => {
   const { markdownRemark } = data
@@ -65,54 +69,8 @@ const Template = ({ data }) => {
                 className="blogpost has-text-justified"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
-              {date ? (
-                <form
-                  action="https://formspree.io/eddayyfeedback@gmail.com"
-                  method="POST"
-                >
-                  <div className="title">FeedBack</div>
-                  <div className="field">
-                    <label className="label">Name</label>
-                    <div className="control is-expanded">
-                      <input
-                        className="input"
-                        type="text"
-                        name="name"
-                        placeholder="name"
-                      />
-                    </div>
-                  </div>
-                  <div className="field">
-                    <label className="label">Email</label>
-                    <div className="control is-expanded">
-                      <input
-                        className="input"
-                        type="email"
-                        name="_replyto"
-                        placeholder="email"
-                      />
-                    </div>
-                  </div>
-                  <div className="field">
-                    <label className="label">Message</label>
-                    <div className="control is-expanded">
-                      <textarea
-                        className="textarea"
-                        name="message"
-                        placeholder="message"
-                      />
-                    </div>
-                  </div>
-                  <div className="field is-grouped">
-                    <div className="control ">
-                      <input
-                        className="button is-link is-right"
-                        type="submit"
-                        value="Send"
-                      />
-                    </div>
-                  </div>
-                </form>
+              {Path.dirname(path) === '/blog'? (
+                <Comments/>
               ) : (
                 ''
               )}
