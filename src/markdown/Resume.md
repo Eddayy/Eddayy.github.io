@@ -58,11 +58,11 @@ Web development tech stacks\
 *Experience working with blockchain DApp or decentralize applications, worked with back end web frameworks, transpilers and modern front end js frameworks*
 
 + React
-+ Redux
++ Redux/Unstated
 + Graphql
 + Gatsby
-+ Handlebars
-+ Webpack/Gulp
++ Webpack
++ Gulp
 + Nodejs
 + Django
 + Linux Bash Scripting
