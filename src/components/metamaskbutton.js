@@ -1,6 +1,7 @@
 import React from 'react'
 import Modal from "react-responsive-modal";
 import Image from './image'
+import Linkify from 'react-linkify'
 class metamaskbutton extends React.Component{
   constructor(props) {
     super(props)
@@ -57,9 +58,9 @@ class metamaskbutton extends React.Component{
         </button>
         <Modal open={this.state.open} onClose={this.onCloseModal} center>
           <br/>
-          <p>
+          <Linkify>
             {this.state.err}
-          </p>
+          </Linkify>
         </Modal>
       </div>
     )
