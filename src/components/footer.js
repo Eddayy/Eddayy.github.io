@@ -7,9 +7,9 @@ const footer = () => {
       <div className="container has-text-grey-dark hero-body">
         <div className="columns">
           <div className="column">
-            Feedback
+            Powered by
             <br />
-            edmundtay96@gmail.com
+            
           </div>
           <div className="column">
             Contact
