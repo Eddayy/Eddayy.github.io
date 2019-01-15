@@ -38,7 +38,7 @@ const Template = ({ data }) => {
       <section className="hero">
         <div className="container hero-body">
           <div className="columns is-centered">
-            <div className="is-half column">
+            <div className="is-half-desktop is-three-fifths-tablet column">
               <p className="title">{title}</p>
               {date ? (
                 <div className="subtitle columns is-6 is-multiline">

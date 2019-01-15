@@ -1,10 +1,12 @@
 import SignIn from '../components/signin/index';
 import GoogleIcon from '../components/icons/google';
 import Auth from '../containers/auth';
-import React from 'react'
 import Firebase from "firebase"
 import firebase from '../services/firebase'
-import moment from 'moment';
+
+import CommentRow from './commentRows'
+import React from 'react'
+
 let state = { 
   comments:[],
   active:false,
@@ -64,7 +66,7 @@ class comments extends React.Component{
           this.setState(state=>({
             comments:doc.data().comments
           }))
-          console.log("Document data:", doc.data().comments);
+          console.log("Document data:", this.state.comments);
         }
         else{
           store.collection("Blogs").doc(this.props.path).set({
@@ -85,6 +87,8 @@ class comments extends React.Component{
     // Remember state for the next mount
     state = this.state;
   }
+
+
 
   render(){
     const {store} = firebase  
@@ -113,6 +117,11 @@ class comments extends React.Component{
                     </div>
                     <div className="field is-grouped is-grouped-right">
                       <div className="control">
+                        <button type='button' className='button'>
+                          Sign out
+                        </button>
+                      </div>
+                      <div className="control">
                         <button className='button is-link '>
                           Post
                         </button>
@@ -128,37 +137,7 @@ class comments extends React.Component{
                     />
                   </div>
                 }
-                <div>
-                  {this.state.comments.map(comment=>{
-                    console.log(comment)
-                    const {Name} = comment
-                    const {Posted} = comment
-                    const {PictureUrl} = comment
-                    const {Text} = comment  
-                    return(
-                      <div key={Posted} className='columns is-12 is-mobile'>
-                        <div className='column has-text-centered is-2 is-horizontal-center'>
-                          <figure class="image is-32x32">
-                            <img class="is-rounded" src={PictureUrl}/>
-                          </figure>
-                        </div>
-                        <div className='column'>
-                          <div className='columns is-mobile'>
-                            <div className=''>
-                              {Name}
-                            </div>
-                            <div className=''>
-                              {moment(Math.round(Posted/100000), "YYYYMMDDHHMMSS").fromNow()}
-                            </div>
-                          </div>
-                          <div className='columns'>
-                            {Text}
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })}
-                </div>
+                <CommentRow comments={this.state.comments} />
               </div>:
               <button className='button ' onClick={this.toggleComment}>
                 Load comments

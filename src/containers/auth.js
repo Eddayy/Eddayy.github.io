@@ -86,7 +86,6 @@ class Auth extends React.Component {
 
   signIn(user) {
     const { uid, isAnonymous,displayName,photoURL } = user;
-    console.log(user)
     this.setState({
       uid,
       isAnonymous,
