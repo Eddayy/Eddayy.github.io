@@ -57,7 +57,7 @@ const Template = ({ data }) => {
                       <i className="fa fa-tags" />
                     </span>
                     {tags.map(tag => {
-                      return <span className="blogtag is-light tag">{tag}</span>
+                      return <span key={tag}className="blogtag is-light tag">{tag}</span>
                     })}
                   </div>
                   
@@ -70,7 +70,7 @@ const Template = ({ data }) => {
                 dangerouslySetInnerHTML={{ __html: html }}
               />
               {Path.dirname(path) === '/blog'? (
-                <Comments/>
+                <Comments path={Path.basename(path)}/>
               ) : (
                 ''
               )}

@@ -13,7 +13,8 @@ const config = {
 class Firebase {
   constructor() {
     firebase.initializeApp(config);
-    this.store = firebase.firestore;
+    this.store = firebase.firestore()
+    this.store.settings( { timestampsInSnapshots: true });
     this.auth = firebase.auth;
   }
 }

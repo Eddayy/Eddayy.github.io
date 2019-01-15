@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 
 const Signin = ({ onClick, icon, text }) => {
   return (
-    <div onClick={onClick}>
-      {icon && cloneElement(icon)}
+    <button onClick={onClick}>
+      
       <span>{text}</span>
-    </div>
+    </button>
   );
 };
 

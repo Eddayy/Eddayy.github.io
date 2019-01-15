@@ -7,8 +7,8 @@ const INITIAL_STATE = {
   isAnonymous: null,
   // // some other properties from the user object that may be useful
   // email: '',
-  // displayName: '',
-  // photoURL: '',
+  displayName: '',
+  photoURL: '',
 };
 
 class Auth extends React.Component {
@@ -51,7 +51,7 @@ class Auth extends React.Component {
           .then((result)=>{
             var token = result.credential.accessToken;
             var user = result.user;
-            console.log({user,token})
+            //console.log({user,token})
           })
           .catch(error => {
             // eslint-disable-next-line no-console
@@ -85,11 +85,13 @@ class Auth extends React.Component {
   };
 
   signIn(user) {
-    const { uid, isAnonymous } = user;
-    console.log(uid + isAnonymous)
+    const { uid, isAnonymous,displayName,photoURL } = user;
+    console.log(user)
     this.setState({
       uid,
       isAnonymous,
+      displayName,
+      photoURL,
     });
   }
 
