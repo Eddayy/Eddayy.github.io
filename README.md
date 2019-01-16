@@ -26,7 +26,7 @@
 
 Upcoming features
 
-- [ ] improve comment system
+- [X] improve comment system
 
 - [ ] create search functionality
 
