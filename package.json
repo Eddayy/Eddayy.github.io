@@ -35,7 +35,8 @@
     "react-share": "^2.4.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-fairy-gates": "^0.16.18"
+    "typography-theme-fairy-gates": "^0.16.18",
+    "unstated": "^2.1.1"
   },
   "keywords": [
     "gatsby"

@@ -7,8 +7,8 @@ const INITIAL_STATE = {
   isAnonymous: null,
   // // some other properties from the user object that may be useful
   // email: '',
-  displayName: '',
-  photoURL: '',
+  displayName: 'Anonymous User',
+  photoURL: '/defaultpic.jpg',
 };
 
 class Auth extends React.Component {
