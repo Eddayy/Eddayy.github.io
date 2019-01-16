@@ -4,6 +4,7 @@ import { Subscribe } from 'unstated'
 import PostContainer from './PostContainer'
 import React from 'react'
 import { Formik } from 'formik';
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Post = ()=>{
   return(
@@ -22,21 +23,30 @@ const Post = ()=>{
               <div className='column'> 
               <Formik
                 //setup recapcha service
-                initialValues={{post:'',}}
+                initialValues={{
+                  post:'',
+                  recaptcha:false, 
+
+                }}
                 validate={values=>{
                   let errors = {};
                   if(!values.post){
                     errors.post = 'Please enter text';
+                    values.recaptcha = false
                   }
                   else if(values.post.length > 500){
                     errors.post = 'Maximum Length 500';
+                    values.recaptcha = false
                   }
                   return errors;
                 }}
                 onSubmit={(values, { setSubmitting }) => {
+                  if(values.recaptcha === false ){
+                    values.recaptcha = true 
+                    setSubmitting(false);
+                    return
+                  }
                   setSubmitting(false);
-                  postContainer.postComment(auth.displayName,values.post,auth.photoURL)
-                  values.post = null
                 }}     
               >
               {({
@@ -56,6 +66,7 @@ const Post = ()=>{
                   </div>
                   <div className='control has-text-danger' style={{position:'absolute'}}>
                     {errors.post && touched.post && errors.post}
+                    {values.recaptcha && 'Please enter captcha'}
                   </div>
                   <div className="field is-grouped is-grouped-right">
                     <div className="control">
@@ -64,11 +75,28 @@ const Post = ()=>{
                       </button>
                     </div>
                     <div className="control">
-                      <button className='button is-link' type='submit' disabled={isSubmitting}>
+                      <button className='button is-link' type='submit'  onClick={()=>{
+                          
+                        }} disabled={isSubmitting}>
                         Post
                       </button>
                       </div>
                   </div>
+                  {values.recaptcha && 
+                  <div className='field is-grouped is-grouped-centered'>
+                    <div className="control">
+                      <ReCAPTCHA
+                        sitekey="6Le8QooUAAAAAKEE3Ot7Dg1uajCl_qffzgsgAXfv"
+                        onChange={()=>{
+                          postContainer.postComment(auth.displayName,values.post,auth.photoURL)
+                          values.post = ''
+                          values.recaptcha = false
+                          console.log(values)
+                        }}
+                      />
+                    </div>  
+                  </div> }
+                  
                 </form>
               )}
               </Formik>
