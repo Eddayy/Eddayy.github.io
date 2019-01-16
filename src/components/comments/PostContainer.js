@@ -1,5 +1,5 @@
 import { Container } from 'unstated'
-import firebase from '../services/firebase'
+import firebase from '../../services/firebase'
 import Firebase from 'firebase'
 
 class PostContainer extends Container {

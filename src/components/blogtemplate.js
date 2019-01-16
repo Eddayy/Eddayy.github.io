@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Comments from '../containers/comments'
+import Comments from './comments/comments'
 import '../style/bulma.scss'
 import Path from 'path'
 import {

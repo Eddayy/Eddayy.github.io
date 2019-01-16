@@ -1,5 +1,5 @@
 import SignIn from './signin'
-import Auth from '../containers/auth'
+import Auth from './auth'
 import { Subscribe } from 'unstated'
 import PostContainer from './PostContainer'
 import React from 'react'

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import firebase from '../services/firebase'
+import firebase from '../../services/firebase'
 
 const INITIAL_STATE = {
   uid: '',
