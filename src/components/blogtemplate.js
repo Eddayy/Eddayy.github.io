@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Comments from './comments/comments'
 import '../style/bulma.scss'
 import Path from 'path'
 import {
@@ -34,9 +35,9 @@ const Template = ({ data }) => {
       <section className="hero">
         <div className="container hero-body">
           <div className="columns is-centered">
-            <div className="is-half column">
+            <div className="is-half-desktop is-three-fifths-tablet column">
               <p className="title">{title}</p>
-              {date ? (
+              {date && (
                 <div className="subtitle columns is-6 is-multiline">
                   <div>
                     <span className="icon is-medium has-text-danger">
@@ -53,68 +54,21 @@ const Template = ({ data }) => {
                       <i className="fa fa-tags" />
                     </span>
                     {tags.map(tag => {
-                      return <span className="blogtag is-light tag">{tag}</span>
+                      return (
+                        <span key={tag} className="blogtag is-light tag">
+                          {tag}
+                        </span>
+                      )
                     })}
                   </div>
-                  
                 </div>
-              ) : (
-                <div />
               )}
               <div
                 className="blogpost has-text-justified"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
-              {date ? (
-                <form
-                  action="https://formspree.io/eddayyfeedback@gmail.com"
-                  method="POST"
-                >
-                  <div className="title">FeedBack</div>
-                  <div className="field">
-                    <label className="label">Name</label>
-                    <div className="control is-expanded">
-                      <input
-                        className="input"
-                        type="text"
-                        name="name"
-                        placeholder="name"
-                      />
-                    </div>
-                  </div>
-                  <div className="field">
-                    <label className="label">Email</label>
-                    <div className="control is-expanded">
-                      <input
-                        className="input"
-                        type="email"
-                        name="_replyto"
-                        placeholder="email"
-                      />
-                    </div>
-                  </div>
-                  <div className="field">
-                    <label className="label">Message</label>
-                    <div className="control is-expanded">
-                      <textarea
-                        className="textarea"
-                        name="message"
-                        placeholder="message"
-                      />
-                    </div>
-                  </div>
-                  <div className="field is-grouped">
-                    <div className="control ">
-                      <input
-                        className="button is-link is-right"
-                        type="submit"
-                        value="Send"
-                      />
-                    </div>
-                  </div>
-                </form>
-              ) : (
-                ''
+              {Path.dirname(path) === '/blog' && (
+                <Comments path={Path.basename(path)} />
               )}
             </div>
           </div>
@@ -122,9 +76,6 @@ const Template = ({ data }) => {
       </section>
       <section className="hero">
         <div className="container hero-body">
-          <div className="title columns is-centered">
-            <div className="column has-text-centered">Social</div>
-          </div>
           <div className="columns is-centered">
             <div className="navbar-brand">
               <TwitterShareButton

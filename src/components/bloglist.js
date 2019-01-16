@@ -50,8 +50,10 @@ class Bloglist extends React.Component {
                     const { timeToRead } = node
                     const { tags } = node.frontmatter
                     return (
-                      <div className="is-three-fifths column has-shadow">
-                        <p className="title">{title}</p>
+                      <div
+                        key={title}
+                        className="is-three-fifths column has-shadow">
+                        <div className="title">{title}</div>
                         <div className="subtitle is-6 columns is-multiline">
                           <div>
                             <span className="icon is-medium has-text-danger">
@@ -63,13 +65,15 @@ class Bloglist extends React.Component {
                             </span>
                             {timeToRead} min
                           </div>
-                          <div className=''>
+                          <div className="">
                             <span className="icon is-medium has-text-success">
                               <i className="fa fa-tags" />
                             </span>
                             {tags.map(tag => {
                               return (
-                                <span className="blogtag is-light tag">
+                                <span
+                                  key={tag}
+                                  className="blogtag is-light tag">
                                   {tag}
                                 </span>
                               )
@@ -78,7 +82,9 @@ class Bloglist extends React.Component {
                         </div>
                         <div className="has-text-grey-dark">
                           {excerpt}
-                          <Link className="has-text-link" to={path}>Read more</Link>
+                          <Link className="has-text-link" to={path}>
+                            Read more
+                          </Link>
                         </div>
                       </div>
                     )

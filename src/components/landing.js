@@ -10,17 +10,17 @@ const landing = () => {
       <div className="columns">
         <div className="container hero-body">
           <div className="is-two-fifths column ">
-            <p className="title">
+            <div className="title">
               <Fade bottom>Hi! I'm Edmund</Fade>
-            </p>
-            <p className="subtitle">
+            </div>
+            <div className="subtitle">
               <Fade bottom>
                 Full Stack web and mobile developer, amateur ML data scientist,
                 generalist programmer
               </Fade>
               <br />
               <Fade bottom>I create App//ications</Fade>
-            </p>
+            </div>
           </div>
         </div>
       </div>
