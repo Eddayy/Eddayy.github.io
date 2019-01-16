@@ -1,4 +1,4 @@
-import React from 'react';
+import React from 'react'
 
 const Google = props => {
   return (
@@ -23,7 +23,7 @@ const Google = props => {
         <path d="M0 0h18v18H0z" />
       </g>
     </svg>
-  );
-};
+  )
+}
 
-export default Google;
+export default Google

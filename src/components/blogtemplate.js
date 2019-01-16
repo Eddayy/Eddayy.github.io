@@ -16,9 +16,6 @@ import {
   LinkedinIcon,
 } from 'react-share'
 
-
-
-
 const Template = ({ data }) => {
   const { markdownRemark } = data
   const { title } = markdownRemark.frontmatter
@@ -57,10 +54,13 @@ const Template = ({ data }) => {
                       <i className="fa fa-tags" />
                     </span>
                     {tags.map(tag => {
-                      return <span key={tag}className="blogtag is-light tag">{tag}</span>
+                      return (
+                        <span key={tag} className="blogtag is-light tag">
+                          {tag}
+                        </span>
+                      )
                     })}
                   </div>
-                  
                 </div>
               )}
               <div
@@ -68,7 +68,7 @@ const Template = ({ data }) => {
                 dangerouslySetInnerHTML={{ __html: html }}
               />
               {Path.dirname(path) === '/blog' && (
-                <Comments path={Path.basename(path)}/>
+                <Comments path={Path.basename(path)} />
               )}
             </div>
           </div>
