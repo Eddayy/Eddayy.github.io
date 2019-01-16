@@ -1,4 +1,4 @@
-import React, { cloneElement } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const Signin = ({ onClick, icon, text }) => {
@@ -12,7 +12,6 @@ const Signin = ({ onClick, icon, text }) => {
 
 Signin.propTypes = {
   onClick: PropTypes.func.isRequired,
-  icon: PropTypes.element,
   text: PropTypes.string.isRequired,
 };
 

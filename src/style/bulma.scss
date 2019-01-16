@@ -72,7 +72,9 @@ html, body {
 .image{
   display: inline-block;
 }
-
+.navbar-item{
+  cursor: pointer;
+}
 @font-face{
   font-display: swap;
 }

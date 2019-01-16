@@ -3,7 +3,6 @@ import Auth from '../containers/auth';
 import { Subscribe } from 'unstated'
 import PostContainer from './PostContainer'
 import React from 'react'
-import GoogleIcon from '../components/icons/google';
 import { Formik } from 'formik';
 
 const Post = ()=>{
@@ -17,12 +16,13 @@ const Post = ()=>{
             <div className='columns is-12 is-mobile is-gapless'>
               <div className='column has-text-centered is-1-tablet is-2-mobile is-horizontal-center'>
                 <figure className="image is-32x32">
-                  <img className="is-rounded" src={auth.photoURL}/>
+                  <img className="is-rounded" src={auth.photoURL} alt='Profile Pic'/>
                 </figure>
               </div>
               <div className='column'> 
               <Formik
-                initialValues={{post:''}}
+                //setup recapcha service
+                initialValues={{post:'',}}
                 validate={values=>{
                   let errors = {};
                   if(!values.post){
@@ -64,7 +64,7 @@ const Post = ()=>{
                       </button>
                     </div>
                     <div className="control">
-                      <button className='button is-link' disabled={isSubmitting}>
+                      <button className='button is-link' type='submit' disabled={isSubmitting}>
                         Post
                       </button>
                       </div>
@@ -79,7 +79,6 @@ const Post = ()=>{
               Please login to post a comment<br/>
               <SignIn
                 onClick={() => (auth.isAuthed ? auth.signOut() : auth.signIn('google'))}
-                icon={auth.isAuthed ? null : <GoogleIcon />}
                 text={auth.isAuthed ? 'Sign Out' : 'Sign in with Google'}
               />
             </div>

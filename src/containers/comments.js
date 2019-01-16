@@ -4,10 +4,6 @@ import React from 'react'
 import { Provider ,Subscribe} from 'unstated'
 import Post from './Post'
 
-
-let PostContainer = new PostState()
-
-
 class comments extends React.Component{
   constructor(props) {
     super(props)

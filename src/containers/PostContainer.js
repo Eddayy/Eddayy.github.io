@@ -18,7 +18,6 @@ class PostContainer extends Container {
   }
 
   getComment = () =>{
-    console.log(this.state.path)
     const {store} = firebase
     const docRef = store.collection("Blogs").doc(this.state.path);
     //start loading gif
@@ -29,7 +28,6 @@ class PostContainer extends Container {
           this.setState(state=>({
             comments:doc.data().comments
           }))
-          console.log("Document data:", this.state.comments);
         }
         else{
           store.collection("Blogs").doc(this.state.path).set({

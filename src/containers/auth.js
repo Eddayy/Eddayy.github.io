@@ -49,8 +49,8 @@ class Auth extends React.Component {
         return auth()
           .signInWithPopup(new auth.GoogleAuthProvider().addScope('https://www.googleapis.com/auth/plus.login'))
           .then((result)=>{
-            var token = result.credential.accessToken;
-            var user = result.user;
+            //var token = result.credential.accessToken;
+            //var user = result.user;
             //console.log({user,token})
           })
           .catch(error => {

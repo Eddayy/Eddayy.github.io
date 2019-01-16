@@ -76,9 +76,6 @@ const Template = ({ data }) => {
       </section>
       <section className="hero">
         <div className="container hero-body">
-          <div className="title columns is-centered">
-            <div className="column has-text-centered">Social</div>
-          </div>
           <div className="columns is-centered">
             <div className="navbar-brand">
               <TwitterShareButton
