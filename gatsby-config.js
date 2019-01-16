@@ -80,9 +80,5 @@ module.exports = {
         name: "markdown-pages",
       },
     },
-    
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
   ],
 }

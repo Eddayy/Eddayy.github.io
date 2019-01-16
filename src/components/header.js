@@ -44,8 +44,7 @@ class Header extends React.Component {
                   this.state.active
                     ? 'navbar-burger is-active burger'
                     : 'navbar-burger burger'
-                }
-              >
+                }>
                 <span />
                 <span />
                 <span />
@@ -54,8 +53,7 @@ class Header extends React.Component {
             <div
               className={
                 this.state.active ? 'is-active navbar-menu' : 'navbar-menu'
-              }
-            >
+              }>
               <div className="navbar-start">
                 <Link className="navbar-item " to="/blog">
                   <span className="icon is-medium has-text-info">
