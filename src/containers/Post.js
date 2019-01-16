@@ -75,9 +75,7 @@ const Post = ()=>{
                       </button>
                     </div>
                     <div className="control">
-                      <button className='button is-link' type='submit'  onClick={()=>{
-                          
-                        }} disabled={isSubmitting}>
+                      <button className='button is-link' type='submit' disabled={isSubmitting}>
                         Post
                       </button>
                       </div>
