@@ -40,7 +40,7 @@ const Template = ({ data }) => {
           <div className="columns is-centered">
             <div className="is-half-desktop is-three-fifths-tablet column">
               <p className="title">{title}</p>
-              {date ? (
+              {date && (
                 <div className="subtitle columns is-6 is-multiline">
                   <div>
                     <span className="icon is-medium has-text-danger">
@@ -62,17 +62,13 @@ const Template = ({ data }) => {
                   </div>
                   
                 </div>
-              ) : (
-                <div />
               )}
               <div
                 className="blogpost has-text-justified"
                 dangerouslySetInnerHTML={{ __html: html }}
               />
-              {Path.dirname(path) === '/blog'? (
+              {Path.dirname(path) === '/blog' && (
                 <Comments path={Path.basename(path)}/>
-              ) : (
-                ''
               )}
             </div>
           </div>

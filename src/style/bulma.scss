@@ -16,6 +16,7 @@
 @import "bulma/sass/elements/tag.sass";
 @import "bulma/sass/elements/form.sass";
 @import "bulma/sass/elements/image.sass";
+@import "bulma/sass/elements/box.sass";
 
 
 @import "bulma/sass/layout/hero.sass";
@@ -23,7 +24,6 @@
 
 
 //todo remove a underline
-
 
 .hero-body{
   padding: 1rem 1.5rem;
@@ -76,3 +76,4 @@ html, body {
 @font-face{
   font-display: swap;
 }
+

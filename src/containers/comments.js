@@ -1,9 +1,3 @@
-import SignIn from './signin';
-import GoogleIcon from '../components/icons/google';
-import Auth from '../containers/auth';
-import Firebase from "firebase"
-import firebase from '../services/firebase'
-
 import PostState from './PostContainer'
 import CommentRow from './commentRows'
 import React from 'react'
@@ -25,14 +19,19 @@ class comments extends React.Component{
       <Provider inject={[this.PostContainer]}>
         <Subscribe to={[this.PostContainer]}>
           {postContainer=>
-            postContainer.state.active?
-            <div>
-              <Post />
-              <CommentRow comments={postContainer.state.comments} />
-            </div>:
-            <button className='button ' onClick={postContainer.toggleComment}>
-              Load comments
-            </button>
+            <div className='has-text-centered'>
+              <div className='label'>
+                Responses
+              </div>
+              {postContainer.state.active?
+              <div>
+                <Post />
+                <CommentRow comments={postContainer.state.comments} />
+              </div>:
+              <button className='button' onClick={postContainer.toggleComment}>
+                Load comments
+              </button>}
+            </div>
           }
         </Subscribe>
       </Provider>
