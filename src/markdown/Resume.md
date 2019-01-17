@@ -13,6 +13,7 @@ Github : [Edmundtay96](https://gitlab.com/edmundtay96)\
 Gitlab : [Eddayy](https://github.com/Eddayy)\
 Kraggle: [Eddyble](https://www.kaggle.com/eddyble)\
 Website: [Eddayy.github.io](https://eddayy.github.io/)\
+Resume: [Download here](https://eddayy.github.io/CV-1.pdf)\
 Address: Puchong, Selangor, Malaysia
 
 **Experience**

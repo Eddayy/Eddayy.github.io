@@ -1,10 +1,12 @@
 import React from 'react'
+import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Landing from '../components/landing'
 import Bloglist from '../components/bloglist'
-import { Link } from 'gatsby'
+import TechStack from '../components/techstacks'
+
 
 const IndexPage = () => (
   <Layout>
@@ -13,6 +15,7 @@ const IndexPage = () => (
       keywords={['gatsby', 'application', 'react', 'bulma', 'github']}
     />
     <Landing />
+    {/*<TechStack />*/}
     <section className="hero">
       <div className="columns">
         <div className="container hero-body">

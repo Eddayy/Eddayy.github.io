@@ -75,6 +75,11 @@ html, body {
 .navbar-item{
   cursor: pointer;
 }
+
+.is-vertical-center {
+  display: flex;
+  align-items: center;
+}
 @font-face{
   font-display: swap;
 }
