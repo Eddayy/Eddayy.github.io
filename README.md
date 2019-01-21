@@ -31,3 +31,9 @@ Upcoming features
 - [ ] create search functionality
 
 - [ ] create recommendation system
+
+Improve index page
+
+- [ ] Add section of tech used
+
+- [ ] Add about this website and about me
