@@ -53,13 +53,11 @@ const Template = ({ data }) => {
                     <span className="icon is-medium has-text-success">
                       <i className="fa fa-tags" />
                     </span>
-                    {tags.map(tag => {
-                      return (
-                        <span key={tag} className="blogtag is-light tag">
-                          {tag}
-                        </span>
-                      )
-                    })}
+                    {tags.map(tag => (
+                      <span key={tag} className="blogtag is-light tag">
+                        {tag}
+                      </span>
+                    ))}
                   </div>
                 </div>
               )}

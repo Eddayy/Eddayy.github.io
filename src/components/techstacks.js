@@ -21,7 +21,7 @@ const techstack = () =>{
       render={({allFile})=>{
         return(
           <section className='hero'>
-           <div className="">
+            <div className="">
             <div className="container hero-body">
               <div className="columns is-mobile">
                 {allFile.edges.map(({node})=>{
