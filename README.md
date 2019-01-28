@@ -34,6 +34,6 @@ Upcoming features
 
 Improve index page
 
-- [ ] Add section of tech used
+- [x] Add section of tech used
 
 - [ ] Add about this website and about me

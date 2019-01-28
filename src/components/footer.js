@@ -7,11 +7,6 @@ const footer = () => {
       <div className="container has-text-grey-dark hero-body">
         <div className="columns">
           <div className="column">
-            Powered by
-            <br />
-            
-          </div>
-          <div className="column">
             Contact
             <br />
             +60179882188
@@ -22,6 +17,8 @@ const footer = () => {
             Donations
             <br />
             <MetamaskButton />
+          </div>
+          <div className="column">
             Bitcoin:
             <br />
             1Bqwtx1tDmrxsrZpyqiU8sMiT2jYiwYgoj
@@ -29,7 +26,6 @@ const footer = () => {
             Etheruem:
             <br />
             0xEddae736256B1F3cf1a9F278CfdcB1E45f4c5515
-            <br />
           </div>
         </div>
       </div>
