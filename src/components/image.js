@@ -31,18 +31,15 @@ export default class Image extends React.Component {
           }
         `}
         render={data => {
-          console.log()
           return (
             <Img
               fluid={
                 data.allImageSharp.edges.find(element => {
                   // Match string after final slash
-                  return (
-                    element.node.fluid.src.split('/').pop() ===
-                    this.props.imgsrc
-                  )
+                  return element.node.fluid.src.split('/').pop() === this.props.imgsrc 
                 }).node.fluid
               }
+              alt={this.props.imgsrc}
             />
           )
         }}

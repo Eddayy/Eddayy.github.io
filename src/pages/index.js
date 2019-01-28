@@ -15,7 +15,7 @@ const IndexPage = () => (
       keywords={['gatsby', 'application', 'react', 'bulma', 'github']}
     />
     <Landing />
-    {/*<TechStack />*/}
+    <TechStack />
     <section className="hero">
       <div className="columns">
         <div className="container hero-body">
