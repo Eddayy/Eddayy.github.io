@@ -1,5 +1,4 @@
 import React from 'react'
-import Roll from 'react-reveal/Roll'
 import Fade from 'react-reveal/Fade'
 import { StaticQuery,graphql } from 'gatsby'
 
@@ -42,7 +41,7 @@ const techstack = () =>{
           <section className='hero'>
             <div className="columns">
             <div className="container hero-body">
-              <Fade left>
+              <Fade bottom>
                 <div className='has-text-grey-dark' style={{paddingLeft:'0.75rem'}}>
                 Built on:
                 </div>
@@ -54,9 +53,7 @@ const techstack = () =>{
                   // <button className='column is-one-fifth-tablet is-half-mobile is-vcentered tip-button'>
                       <div className='image is-64x64' style={{marginRight:'0.75rem'}}>
                         <a href={imagelinks(node.base)}>
-                          <Roll left>
-                            <Image imgsrc={node.base}/>
-                          </Roll>
+                          <Image imgsrc={node.base}/>
                         </a>
                       </div>
                     //</button>
