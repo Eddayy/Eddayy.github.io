@@ -48,7 +48,6 @@ const techstack = () =>{
               </Fade>
               <div className="column is-mobile">
                 {allFile.edges.map(({node})=>{
-                  console.log(node.base)
                   return (
                   // <button className='column is-one-fifth-tablet is-half-mobile is-vcentered tip-button'>
                       <div className='image is-64x64' style={{marginRight:'0.75rem'}}>

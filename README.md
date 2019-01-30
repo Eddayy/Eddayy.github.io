@@ -37,3 +37,5 @@ Improve index page
 - [x] Add section of tech used
 
 - [ ] Add about this website and about me
+
+- [ ] Add info about commit history
