@@ -24,9 +24,9 @@ class PostContainer extends Container {
       .then(doc => {
         //end loading
         if (doc.exists) {
-          this.setState(state => ({
+          this.setState({
             comments: doc.data().comments,
-          }))
+          })
         } else {
           store
             .collection('Blogs')
