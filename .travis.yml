@@ -2,3 +2,21 @@ language: node_js
 node_js:
   - '10.0'
 sudo: false
+cache:
+  directories:
+  - node_modules
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep-history: true
+  on:
+    branch: master
+before_script:
+  - "npm i -g gatsby"
+  - "npm i"
+script:
+  - "npm run build"
+after_success:
+  - "npm run deploy"
