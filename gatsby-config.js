@@ -38,6 +38,7 @@ module.exports = {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography.js`,
+        omitGoogleFont: true,
       },
     },
     'gatsby-plugin-sass',
@@ -81,5 +82,14 @@ module.exports = {
         name: "markdown-pages",
       },
     },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Work Sans:600', 'Quattrocento Sans:400,400i,700']
+        }
+      }
+
+    }
   ],
 }
