@@ -2,19 +2,22 @@ language: node_js
 node_js:
   - '10.0'
 sudo: false
+git:
 
+  depth: 5
 
+install:
+  - 'npm config set -g production true'
 deploy:
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
+  local-dir: public
+  target-branch: master
   on:
     branch: development
 before_script:
   - "npm i -g gatsby"
-  - 'npm install --only=prod'
 script:
   - "npm run build"
-after_success:
-  - "npm run deploy"
