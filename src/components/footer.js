@@ -43,7 +43,7 @@ const footer = ({data}) => {
               </div>
             </div>
             <div className='has-text-centered is-size-7'>
-              © {new Date().getFullYear()}, Built by Edmund. <Link to='/privacy'>Privacy Policy</Link>
+              © {new Date().getFullYear()}, Built by Edmund. <Link className="has-text-link" to='/privacy'>Privacy Policy</Link>
             </div>
           </div>
         </footer>

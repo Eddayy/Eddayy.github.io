@@ -67,13 +67,13 @@ module.exports = {
         cookieDomain: "Eddayy.github.io",
       },
     },
-    {
-      resolve: `gatsby-plugin-hotjar`,
-      options: {
-        id: 1154418,
-        sv: 6
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-hotjar`,
+    //   options: {
+    //     id: 1154418,
+    //     sv: 6
+    //   },
+    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
