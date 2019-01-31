@@ -26,16 +26,16 @@
 
 Upcoming features
 
+- [ ] Migrate to typescript(!)
+
 - [X] improve comment system
 
 - [ ] create search functionality
 
 - [ ] create recommendation system
 
-Improve index page
-
 - [x] Add section of tech used
 
 - [ ] Add about this website and about me
 
-- [ ] Add info about commit history
+- [x] Add info about commit history
