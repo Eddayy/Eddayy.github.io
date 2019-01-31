@@ -7,6 +7,7 @@ git:
   depth: 5
 
 install:
+  - 'npm install -g npm@latest'
   - 'npm install --only=prod'
 deploy:
   provider: pages
@@ -18,7 +19,6 @@ deploy:
   on:
     branch: development
 before_script:
-  - 'npm install -g npm@latest'
   - "npm i -g gatsby"
 script:
   - "npm run build"
