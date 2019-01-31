@@ -3,8 +3,7 @@ import {StaticQuery,graphql, Link} from 'gatsby'
 import MetamaskButton from './metamaskbutton'
 import moment from 'moment'
 
-const footer = ({data}) => {
-  console.log(data)
+const footer = () => {
   return (
     <StaticQuery 
       query={graphql`
