@@ -1,3 +1,4 @@
+![](https://travis-ci.org/Eddayy/Eddayy.github.io.svg?branch=development)
 
 ## 🚀 Quick start
 
