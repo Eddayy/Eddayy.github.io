@@ -52,7 +52,7 @@
     "deploy": "gatsby build && gh-pages -d public -b master -t"
   },
   "devDependencies": {
-    "cypress": "3.1.4",
+    "cypress": "3.1.5",
     "firebase": "5.8.1",
     "gh-pages": "2.0.1",
     "prettier": "1.16.2",
