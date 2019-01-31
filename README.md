@@ -1,5 +1,5 @@
-![](https://travis-ci.org/Eddayy/Eddayy.github.io.svg?branch=development)
-
+![Build status](https://travis-ci.org/Eddayy/Eddayy.github.io.svg?branch=development)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## 🚀 Quick start
 
 1.  **Clone development branch of repo.**
