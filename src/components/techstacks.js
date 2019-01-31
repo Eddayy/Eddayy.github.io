@@ -50,7 +50,7 @@ const techstack = () =>{
                 {allFile.edges.map(({node})=>{
                   return (
                   // <button className='column is-one-fifth-tablet is-half-mobile is-vcentered tip-button'>
-                      <div className='image is-64x64' style={{marginRight:'0.75rem'}}>
+                      <div key={node.base} className='image is-64x64' style={{marginRight:'0.75rem'}}>
                         <a href={imagelinks(node.base)}>
                           <Image imgsrc={node.base}/>
                         </a>
