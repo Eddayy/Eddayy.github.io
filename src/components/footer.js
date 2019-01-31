@@ -28,10 +28,10 @@ const footer = ({data}) => {
                 edmundtay96@gmail.com
               </div>
               <div className="column">
-                Repo info
+                Repository info
                 <br />
-                Last commited on {moment(data.gitCommit.commitDate*1000).format('DD MMM YYYY')}
-                <br />
+                Last commited on {moment(data.gitCommit.commitDate*1000).format('DD MMM YYYY LT')}
+                  <br />
                 {data.gitCommit.commitSubject}
               </div>
               <div className="column">
@@ -42,7 +42,7 @@ const footer = ({data}) => {
                 Eth:0xEddae736256B1F3cf1a9F278CfdcB1E45f4c5515
               </div>
             </div>
-            <div className='has-text-centered'>
+            <div className='has-text-centered is-size-7'>
               © {new Date().getFullYear()}, Built by Edmund. <Link to='/privacy'>Privacy Policy</Link>
             </div>
           </div>

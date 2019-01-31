@@ -2,7 +2,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## 🚀 Quick start
 
-1.  **Clone development branch of repo.**
+1.  **Clone development branch of repository.**
 
     ```sh
     git clone https://github.com/Eddayy/Eddayy.github.io.git -b development
@@ -20,14 +20,12 @@
 
     Your site is now running at `http://localhost:8000`!
     
-    *Note: You'll also see a second link: `http://localhost:8000/___graphql`. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql).*
-    
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
-    
 
 Upcoming features
 
 - [ ] Migrate to typescript(!)
+
+- [ ] Screen for side projects
 
 - [X] improve comment system
 
