@@ -10,10 +10,10 @@ deploy:
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
-    branch: master
+    branch: development
 before_script:
   - "npm i -g gatsby"
-  - "npm i"
+  - 'npm install --only=prod'
 script:
   - "npm run build"
 after_success:
