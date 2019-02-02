@@ -20,10 +20,10 @@ class selector extends React.Component{
         <div className="container hero-body">
           <div className="tabs">
             <ul>
-              <li className={this.state.blog && "is-active"} title="list of blog posts" onClick={()=>{this.setState({blog:true,side:false})}}>
+              <li className={this.state.blog?"is-active":''} title="list of blog posts" onClick={()=>{this.setState({blog:true,side:false})}}>
                 <Link to='/'>Blog</Link>
               </li>
-              <li className={this.state.side && "is-active"} title="list of side projects"  onClick={()=>{this.setState({side:true,blog:false})}}>
+              <li className={this.state.side?"is-active":''} title="list of side projects"  onClick={()=>{this.setState({side:true,blog:false})}}>
                 <Link to='/'>Side Projects</Link>
               </li>
             </ul>
@@ -31,7 +31,7 @@ class selector extends React.Component{
         </div>
       </div>
     </section>
-      {this.state.blog ? <Bloglist />:<Projectlist />}
+      {this.state.blog ? <Bloglist perpage={3} />:<Projectlist />}
       </div>
     ) 
   }
