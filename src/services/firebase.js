@@ -1,4 +1,7 @@
-import firebase from 'firebase'
+import 'firebase/auth'
+import 'firebase/firestore'
+import firebase from 'firebase/app'
+
 
 const config = {
   apiKey: 'AIzaSyAvad8R_JYBxSm2xeJ7GCsHQyjRowS2_CY',
@@ -11,9 +14,8 @@ const config = {
 
 class Firebase {
   constructor() {
-    firebase.initializeApp(config)
-    this.store = firebase.firestore()
-    this.store.settings({ timestampsInSnapshots: true })
+    
+    this.store = firebase.initializeApp(config).firestore()
     this.auth = firebase.auth
   }
 }
