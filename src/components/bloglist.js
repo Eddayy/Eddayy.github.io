@@ -4,7 +4,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types';
 import '../style/bulma.scss'
-
+import ReactPaginate from 'react-paginate';
 
 class Bloglist extends React.Component {
   constructor(props) {
@@ -102,6 +102,16 @@ class Bloglist extends React.Component {
                     }
                     
                   })}
+                  <ReactPaginate 
+                    pageCount={Math.ceil(edges.length/this.props.perpage)} 
+                    pageRangeDisplayed={1} 
+                    marginPagesDisplayed={3}
+                  />
+
+                    
+
+
+
                 </div>
               </div>
             </section>
