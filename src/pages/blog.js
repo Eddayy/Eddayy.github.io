@@ -11,7 +11,7 @@ const ResumePage = () => {
         title="Home"
         keywords={['gatsby', 'application', 'react', 'bulma', 'github']}
       />
-      <Bloglist />
+      <Bloglist  perpage={3}/>
     </Layout>
   )
 }
