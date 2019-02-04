@@ -21,7 +21,7 @@ install:
   - 'npm install -g npm@latest'
   - 'npm install --only=prod'
 before_script:
-  - "npm i -g gatsby"
+  - "npm install -g gatsby-cli"
 script:
   - "npm run build"
 deploy:
