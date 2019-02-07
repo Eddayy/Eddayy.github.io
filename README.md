@@ -21,7 +21,7 @@
     Your site is now running at `http://localhost:8000`!
     
 
-Upcoming features
+Upcoming features(the unfinished task are getting longer :unamused:)
 
 - [ ] Migrate to typescript(!)
 
@@ -38,3 +38,7 @@ Upcoming features
 - [ ] Add about this website and about me
 
 - [x] Add info about commit history
+
+- [ ] config renovatebot
+
+
