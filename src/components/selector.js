@@ -15,24 +15,24 @@ class selector extends React.Component{
   render(){
     return(
     <div>
-    <section className="hero">
-      <div className="columns">
-        <div className="container hero-body">
-          <div className="tabs">
-            <ul>
-              <li className={this.state.blog?"is-active":''} title="list of blog posts" onClick={()=>{this.setState({blog:true,side:false})}}>
-                <Link to='/'>Blog</Link>
-              </li>
-              <li className={this.state.side?"is-active":''} title="list of side projects"  onClick={()=>{this.setState({side:true,blog:false})}}>
-                <Link to='/'>Side Projects</Link>
-              </li>
-            </ul>
+      <section className="hero">
+        <div className="columns">
+          <div className="container hero-body">
+            <div className="tabs">
+              <ul>
+                <li className={this.state.blog?"is-active":''} title="list of blog posts" onClick={()=>{this.setState({blog:true,side:false})}}>
+                  <Link to='/'>Blog</Link>
+                </li>
+                <li className={this.state.side?"is-active":''} title="list of side projects"  onClick={()=>{this.setState({side:true,blog:false})}}>
+                  <Link to='/'>Side Projects</Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
       {this.state.blog ? <Bloglist perpage={3} />:<Projectlist />}
-      </div>
+    </div>
     ) 
   }
 }

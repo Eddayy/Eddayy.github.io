@@ -9,7 +9,7 @@ module.exports = {
     linkendin:'https://www.linkedin.com/in/eddyble/',
     css: 'https://bulma.io/',
   },
-  plugins: [
+  plugins: [    
     'gatsby-plugin-offline',
     'gatsby-source-git-commit',
     'gatsby-plugin-react-helmet',
