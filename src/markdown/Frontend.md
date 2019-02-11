@@ -4,7 +4,7 @@ date: "2019-02-11"
 title: "Front end Engineer identity crisis"
 tags: ['Discussion','Front-end','Technology']
 ---
-![](../images/clockfish.jpg)
+![](../images/frontend.jpg)
 
 
 So recently, I listened to a topic about two vastly different approach to front end development on the JS party podcast(great podcast btw you can find it [here](https://changelog.com/jsparty)). It was talking about [this](https://css-tricks.com/the-great-divide/) article from CSS-trick, "the great divide". The main idea is that there is two types of front-end engineers, the UX engineer and the javascript engineer but many companies treat both as the same.
