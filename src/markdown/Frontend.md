@@ -2,7 +2,7 @@
 path: "/blog/front-end-engineer-identity-crisis"
 date: "2019-02-11"
 title: "Front end Engineer identity crisis"
-tags: ['Discussion','Front-end']
+tags: ['Discussion','Front-end','Technology']
 ---
 ![](../images/clockfish.jpg)
 
