@@ -1,6 +1,6 @@
 import { Container } from 'unstated'
 import firebase from '../../services/firebase'
-import  {firestore} from 'firebase/firestore'
+
 
 class PostContainer extends Container {
   state = {
@@ -56,7 +56,7 @@ class PostContainer extends Container {
     }
     docref
       .update({
-        comments: firestore.FieldValue.arrayUnion(commentObj),
+        comments: firebase.firestore.FieldValue.arrayUnion(commentObj),
       })
       .then(() => {
         this.setState(state => ({
