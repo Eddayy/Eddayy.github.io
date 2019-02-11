@@ -63,7 +63,9 @@ class Bloglist extends React.Component {
                       return (
                         <div key={title}
                           className="is-three-fifths column has-shadow">
-                          <div className="title">{title}</div>
+                          <div className='title'>
+                            <Link className='title' to={path} >{title}</Link>
+                          </div>
                           <div className="subtitle is-6 columns is-multiline">
                             <div>
                               <span className="icon is-medium has-text-danger">
