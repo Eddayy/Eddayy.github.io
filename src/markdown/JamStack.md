@@ -1,8 +1,8 @@
 ---
 path: "/blog/JamStack"
 date: "2019-01-09"
-title: "JamStack: Jamming without headaches(WIP)"
-tags: ['Technology', 'JamStack','Serverless','WIP']
+title: "JamStack: Jamming without headaches"
+tags: ['Technology', 'JamStack','Serverless']
 ---
 ![](../images/jamstack.png)
 Javascript, API and Markup. That is what the Jam in the stack stand for. Javascript for dynamic content, APIs that abstract database and Markup for the static content for the website. During the development of this website, I come across this term when looking for cheap and fast design pattern to follow. The Jamstack basically says that there should be no databases, no webserver. You just have to put up the project in git, build it once and let a CDN like github pages or netlify point towards it.

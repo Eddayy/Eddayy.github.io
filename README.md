@@ -39,6 +39,6 @@ Upcoming features(the unfinished task are getting longer :unamused:)
 
 - [x] Add info about commit history
 
-- [ ] config renovatebot
+- [x] config renovatebot
 
 
