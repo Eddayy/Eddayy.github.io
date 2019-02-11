@@ -59,7 +59,6 @@ class Bloglist extends React.Component {
                     const { timeToRead } = node
                     const { tags } = node.frontmatter
                     counter++
-                    console.log(this.state.current_page)
                     if(this.state.current_page.includes(counter)){
                       return (
                         <div key={title}
@@ -100,6 +99,7 @@ class Bloglist extends React.Component {
                         </div>
                       )
                     }
+                    return <div/>
                     
                   })}
                 </div>
