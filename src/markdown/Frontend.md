@@ -17,3 +17,4 @@ As software development continues to be more complicated and the tooling just ke
 
 This does not mean don't specialize in html/css, you just have to find companies that values are the same as yours. Honestly, my advice is to developers is that you have to show companies the important of your skillsets and for companies or product managers to think if they need a UX developer instead of a front-end developer.
 
+*Disclaimer: I'm still new to writing,so please point out any mistakes by commenting below.*
