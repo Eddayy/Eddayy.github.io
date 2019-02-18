@@ -56,13 +56,6 @@ class metamaskbutton extends React.Component {
           onClick={this.startmetamask}>
           <Image
             imgsrc={this.state.img}
-            style={{
-              position: 'absolute',
-              left: 0,
-              top: 0,
-              width: '100%',
-              height: '100%',
-            }}
           />
         </button>
         <Modal open={this.state.open} onClose={this.onCloseModal} center>

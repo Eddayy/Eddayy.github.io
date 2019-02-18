@@ -3,22 +3,22 @@ import 'font-awesome/css/font-awesome.min.css'
 
 import '../style/bulma.scss'
 import Fade from 'react-reveal/Fade'
+import Image from './image'
 
 const landing = () => {
   return (
     <section className="hero">
       <div className="container hero-body">
         <div className="columns is-12 is-mobile" style={{paddingLeft:'0.75rem'}}>
-          <div className="column is-1-tablet is-2-mobile is-horizontal-center">
-            <figure className="image is-64x64">
-              <img
-                className="is-rounded"
-                src={`https://eddayy.github.io/profilepic.jpeg`}
-                alt="Profile Pic"
+          <div className="column is-1-tablet is-2-mobile">
+            <div className="image is-64x64 is-centered'" >
+              <Image
+                imgsrc={`profilepic.jpeg`}
+                style={{borderRadius: '50%'}}
               />
-            </figure>
+            </div>
           </div>
-          <div className="column is-6-desktop  is-10-tablet is-10-mobile">
+          <div className="column is-6-desktop  is-9-tablet is-10-mobile">
             <div className="title">
               <Fade bottom>Hi! I'm Edmund</Fade>
             </div>
