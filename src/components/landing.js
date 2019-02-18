@@ -23,7 +23,7 @@ const landing = () => {
               <Fade bottom>Hi! I'm Edmund</Fade>
             </div>
             <div className="subtitle">
-              <Fade bottom><span>Personal blog by <a href="https://www.linkedin.com/in/eddyble/">Edmund Tay</a></span></Fade>
+              <Fade bottom><span>Personal blog by <a className="has-text-link" href="https://www.linkedin.com/in/eddyble/">Edmund Tay</a></span></Fade>
               <br />
               <Fade bottom>
                 Full Stack web and mobile developer, amateur ML data scientist,
