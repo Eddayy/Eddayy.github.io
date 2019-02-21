@@ -4,12 +4,11 @@ import 'font-awesome/css/font-awesome.min.css'
 import '../style/bulma.scss'
 import Fade from 'react-reveal/Fade'
 import Image from './image'
-
 const landing = () => {
   return (
     <section className="hero">
       <div className="container hero-body">
-        <div className="columns is-12">
+        <div className="columns is-12 landingpage">
           <div className="column is-1-tablet is-2-mobile">
             <div className="image is-64x64 is-32x32-mobile is-centered'" >
               <Image

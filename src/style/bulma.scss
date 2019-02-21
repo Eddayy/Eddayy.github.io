@@ -84,3 +84,8 @@ html, body {
   font-display: swap;
 }
 
+.landingpage{
+  @media screen and (min-width: 768px) {
+      padding-left: 0.75rem;
+  }
+}
