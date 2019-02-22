@@ -23,7 +23,7 @@ Address: Puchong, Selangor, Malaysia
 
 + [Blocklime.com](https://www.blocklime.com/)
 + May 2018 – Current
-+ Work on both the Front and Back-end for web and mobile development, also involve Etheruem Smart contract development and integration. I was also involve in private Blockchain infrastructure development and deployment using Quorum.  
++ Work on both the Front and Back-end for web and mobile development, also involve Etheruem Smart contract development and integration. I was also involve in private Blockchain infrastructure development and deployment using Quorum. Developed APIs using expressjs, fastify and Django and deployed on AWS. At blocklime, I started also initiatives to dockerise some services, improve team communication, setup meetings with upper management so issues are taken seriously and meetings with developers to share knowledge.
 
 **Intern**
 
