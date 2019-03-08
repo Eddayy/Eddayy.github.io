@@ -36,9 +36,9 @@
     "react-responsive-modal": "3.6.0",
     "react-reveal": "1.2.2",
     "react-share": "2.4.0",
-    "react-typography": "0.16.18",
-    "typography": "0.16.18",
-    "typography-theme-fairy-gates": "0.16.18",
+    "react-typography": "0.16.19",
+    "typography": "0.16.19",
+    "typography-theme-fairy-gates": "0.16.19",
     "unstated": "2.1.1"
   },
   "keywords": [
