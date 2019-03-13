@@ -27,18 +27,19 @@ Upcoming features(the unfinished task are getting longer :unamused:)
 
 - [ ] Screen for side projects
 
-- [X] improve comment system
-
 - [ ] create search functionality
 
 - [ ] create recommendation system
 
+- [ ] Organize folder of markdown files
+
 - [x] Add section of tech used
 
-- [ ] Add about this website and about me
+- [x] Add about this website and about me
 
 - [x] Add info about commit history
 
 - [x] config renovatebot
 
+- [X] improve comment system
 
