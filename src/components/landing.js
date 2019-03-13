@@ -12,7 +12,7 @@ const landing = () => {
           <div className="column is-1-tablet is-2-mobile">
             <div className="image is-64x64 is-32x32-mobile is-centered'" >
               <Image
-                imgsrc={`profilepic.jpeg`}
+                imgsrc={`profilepic.jpg`}
                 style={{borderRadius: '50%'}}
               />
             </div>
