@@ -5,7 +5,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "bulma": "0.7.4",
-    "firebase": "5.8.6",
+    "firebase": "5.9.0",
     "font-awesome": "4.7.0",
     "formik": "1.5.1",
     "gatsby": "2.1.32",
