@@ -3,6 +3,7 @@ module.exports = {
     title: 'Eddayy',
     description: `My name's Edmund Tay, a developer from Malaysia`,
     author: 'Edmund Tay',
+    image:'/favicon.png',
     github:'https://github.com/Eddayy',
     repo:'https://github.com/Eddayy/Eddayy.github.io/tree/development',
     gitlab:'https://gitlab.com/edmundtay96',

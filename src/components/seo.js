@@ -27,6 +27,10 @@ function SEO({ description, lang, meta, keywords, title }) {
                 content: title,
               },
               {
+                property: 'og:image',
+                content: image,
+              },
+              {
                 property: 'og:description',
                 content: metaDescription,
               },
