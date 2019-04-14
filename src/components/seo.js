@@ -10,6 +10,8 @@ function SEO({ description, lang, meta, keywords, title,image }) {
       render={data => {
         const metaDescription =
           description || data.site.siteMetadata.description
+        const metaimage =
+          image || data.site.siteMetadata.image
         return (
           <Helmet
             htmlAttributes={{
@@ -28,7 +30,7 @@ function SEO({ description, lang, meta, keywords, title,image }) {
               },
               {
                 property: 'og:image',
-                content: image,
+                content: metaimage,
               },
               {
                 property: 'og:description',
@@ -80,6 +82,7 @@ SEO.defaultProps = {
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
+  image: PropTypes.string,
   meta: PropTypes.array,
   keywords: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
@@ -94,6 +97,7 @@ const detailsQuery = graphql`
         title
         description
         author
+        image
       }
     }
   }
