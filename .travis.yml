@@ -10,11 +10,6 @@ notifications:
     on_success: never # default: change
     on_failure: always # default: always
 
-cache:
-  yarn: true
-  directories:
-    - node_modules
-
 git:
   depth: 5
 
