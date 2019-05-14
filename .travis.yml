@@ -11,15 +11,15 @@ notifications:
     on_failure: always # default: always
 
 cache:
+  yarn: true
   directories:
-  - node_modules
+    - node_modules
 
 git:
   depth: 5
 
 install:
-  - 'npm install -g npm@latest'
-  - 'npm install --only=prod'
+  - 'yarn install  --production'
 before_script:
   - "npm install -g gatsby-cli"
 script:
