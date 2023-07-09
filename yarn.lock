@@ -2464,10 +2464,10 @@ builtin-status-codes@^3.0.0:
   resolved "https://registry.npmjs.org/builtin-status-codes/-/builtin-status-codes-3.0.0.tgz"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
 
-bulma@0.7.4:
-  version "0.7.4"
-  resolved "https://registry.npmjs.org/bulma/-/bulma-0.7.4.tgz"
-  integrity sha512-krG2rP6eAX1WE0sf6O0SC/FUVSOBX4m1PBC2+GKLpb2pX0qanaDqcv9U2nu75egFrsHkI0zdWYuk/oGwoszVWg==
+bulma@0.9.4:
+  version "0.9.4"
+  resolved "https://registry.npmjs.org/bulma/-/bulma-0.9.4.tgz"
+  integrity sha512-86FlT5+1GrsgKbPLRRY7cGDg8fsJiP/jzTqXXVqiUZZ2aZT8uemEOHlU1CDU+TxklPEZ11HZNNWclRBBecP4CQ==
 
 bytebuffer@~5:
   version "5.0.1"
@@ -4910,6 +4910,7 @@ fastparse@^1.1.1:
 "favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
   version "0.0.9"
   resolved "git+ssh://git@github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  integrity sha512-u+Z0p3ip5rrC5fvpwbOnMAX3gU4PGPP/GRJNkJAt8/D0g5HvFrVh/Q2BL5n3DtrBvyFew6CdV+y2aAltvUBhUA==
   dependencies:
     core-js "^2.5.7"
     favicons "^5.1.1"
