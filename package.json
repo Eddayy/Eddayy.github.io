@@ -31,7 +31,7 @@
     "prop-types": "15.7.2",
     "react": "16.8.6",
     "react-dom": "16.8.6",
-    "react-google-recaptcha": "1.0.5",
+    "react-google-recaptcha": "1.1.0",
     "react-helmet": "5.2.0",
     "react-linkify": "0.2.2",
     "react-responsive-modal": "3.6.0",
