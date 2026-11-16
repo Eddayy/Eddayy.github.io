@@ -57,7 +57,7 @@
   "devDependencies": {
     "cypress": "3.2.0",
     "prettier": "1.17.0",
-    "start-server-and-test": "1.9.0"
+    "start-server-and-test": "1.15.4"
   },
   "repository": {
     "type": "git",
